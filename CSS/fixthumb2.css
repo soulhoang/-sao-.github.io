@@ -1,0 +1,34 @@
+@charset "UTF-8";
+/* CSS Document */
+#NAVILINE {
+	margin-top:10vw;
+}
+#SITEMAPICON {
+	margin-top:9vw;
+}
+#TIME {
+
+	top:9vw;
+
+}
+#IMG1 {
+	width:100%;
+}
+#IMG2 {
+	width:100%;
+	top:4.5vw;
+}
+#IMG3 {
+	width:100%;
+}
+#IMG4 {
+	width:100%;
+	top:6.8vw;
+
+}
+#COL1 {
+	padding:10px;
+}
+#COL2 {
+	padding:10px;
+}

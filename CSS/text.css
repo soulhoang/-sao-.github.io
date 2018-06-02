@@ -1,0 +1,134 @@
+@charset "utf-8";
+/* CSS Document */
+
+.name {
+	left:120px;
+}
+.nick {
+
+	left:120px;
+}
+.EXBUT {
+
+	left:120px;
+}
+#sinon {
+	left:120px;
+}
+#sinonn {
+	left:120px;
+}
+#EXBUT2 {
+	left:120px;
+}
+#SMNAVILINE {
+	position: relative;
+	margin-left:auto;
+	margin-right: auto;
+	top:80px;
+	width:340px;
+	height:14px;
+	background-image: url(../images/NAVILINE_53.png);
+	overflow: hidden;
+	background-position: center center;
+}
+
+#SMSMCONT {
+	top:65px;
+	position: relative;
+	width:520px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#CHARNAVILINE {
+	position: relative;
+	margin-left:auto;
+	margin-right: auto;
+	width:340px;
+	height:14px;
+	background-image: url(../images/NAVILINE_53.png);
+	overflow: hidden;
+	background-position: center center;	
+}
+#CHARCONT {
+	position: relative;
+	top:-15px;
+	width:520px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#LARGETHUMB {
+	margin-top:60px;
+	left:0px;
+	width:400px;
+	height:300px;
+	background-size:cover;
+	background-position: -650px;
+	transform:rotateY(4deg);
+	z-index: 1;
+}
+#SMALLTHUMB1 {
+
+	width:400px;
+	height:488px;
+	background-size:cover;
+	background-position: -1150px;
+	top:-300px;
+	left:0px;
+	transform:rotateY(-4deg);
+	opacity:0;
+}
+#SMALLTHUMB2 {
+
+	width:400px;
+	height:150px;
+	background-size:cover;
+	top:-448px;
+	left:0px;
+	transform:rotateY(4deg);
+}
+.GACONTAINER {
+	position: relative;
+	width:auto;
+	max-width: 700px;
+	margin-left:auto;
+	margin-right:auto;
+	height:700px;
+}
+.GACONTAINER2 {
+	width:400px;
+	height:700px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#LOCATHUMBG {
+	height:850px;
+	background-size:cover;
+}
+#LOCANAVILINE {
+	top:-719px;
+}
+#LOCAZNAVILINE {
+	margin-top:100px;
+	margin-left:auto;
+	margin-right:auto;
+	width:340px;
+	height:14px;
+}
+#LOCAZNAVILINE2 {
+	margin-top:0px;
+	margin-left:auto;
+	margin-right:auto;
+	width:340px;
+	height:14px;
+}
+.GACONTAINER2 {
+	perspective: 0px;
+}
+#LOCANAVILINE2 {
+	display:none;
+}
+#LOCANAVILINE3 {
+	display:none;
+}

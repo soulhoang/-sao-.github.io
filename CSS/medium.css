@@ -1,0 +1,754 @@
+@charset "utf-8";
+/* CSS Document */
+
+#MENU {
+	display: none;
+}
+#HSITEMAPNAME {
+	opacity: 0.7;
+	margin-top:15px;
+}
+
+/*#MENULINE {
+	position: absolute;
+	top:51px;
+	left:120px;
+	width:528px;
+	height:8px;
+	background-image: url(../images/MENULINE_mid_05.png);
+}*/
+#MENULINE {
+	
+	margin:86px 90px 0px 90px;
+	max-width:1101px;
+	height:23px;
+	background-image: url(../images/MENULINE_05.png);
+	overflow: hidden;
+	background-position: center center;
+}
+/*#FRAME {
+	height: 1495px;
+	width: 768px;
+	margin: 0px auto 0px auto;
+	background: #000000;
+}*/
+#FRAME {
+	height: 1600px;
+	max-width: 1280px;
+	min-width: 481px;
+	margin: 0px auto 0px auto;
+	background: #000000;
+}
+/*#HEAD {
+	position: absolute;
+	height: 109px;
+	width: 768px;
+	left: 0px;
+	top: 0px;
+}*/
+#HEAD {
+	position: absolute;
+	height: 109px;
+	width:100%;
+	left: 0px;
+	top: 0px;
+}
+/*#SPLASH {
+	position: relative;
+	height: 600px;
+	width: 768px;
+	left: 0px;
+	top: 0px;
+	overflow: hidden;
+}*/
+#SPLASH {
+	position: relative;
+	height: 600px;
+	max-width: 1280px;
+	min-width: 481px;
+	left: 0px;
+	top: 0px;
+	overflow: hidden;
+}
+#SPLASHSCREEN {
+	position: relative;
+	width:1280px;
+	left:50%;
+	transform: translateX(-50%);
+}
+
+#TIT {
+	margin: -73px auto 0px auto;
+	width:80px;
+	height:40px;
+	text-align: center;
+	letter-spacing: 0.2em;
+	color:rgba(255,255,255,0.6);
+	display: block;
+	font-family: SAO;
+	font-size:30px;
+}
+#MENUNAV {
+	width:55px;
+	height:55px;
+	position: absolute;
+	right:20px;
+	top:104px;
+	cursor: pointer;
+	outline:none;
+	z-index: 9999;
+}
+#MENUNAV:hover {
+	background-size:cover;
+}
+
+#MENUMID {
+	width:332px;
+	height:384px;
+	position: absolute;
+	right:20px;
+	top:174px;
+	margin-right:-352px;
+	z-index: 9999;
+	
+	
+	
+}
+#DECORMID {
+	width:4px;
+	height:281px;
+	position: absolute;
+	right:0px;
+	top:0px;
+	background: rgba(255,255,255,0.7);
+}
+.MSTYLE {
+	height:66px;
+	position: relative;
+	background: rgba(255,255,255,0.7);
+	line-height: 66px;
+	font-family:SAO;
+	font-size: 31px;
+	color: rgba(0,0,0,0.5);
+	letter-spacing: 0.1em;
+	transition: all 0.2s ease-in-out;
+	text-align: center;
+	cursor: pointer;
+}
+#CHARG {
+	height:66px;
+	position: relative;
+	width:208px;
+	top:6px;
+	left:112px;
+}
+#LOCAG {
+	height:66px;
+	position: relative;
+	width:188px;
+	left:132px;
+	top:12px;
+}
+.VSTYLE {
+	height:15px;
+	width:26px;
+	position: relative;
+	background-image: url(../images/SHOWICON_82.png);
+	transition: all 0.2s ease-in-out;
+	cursor: pointer;
+	top:25px;
+}
+/*.MSTYLE:hover {
+	background: rgba(235,166,1,0.8);
+	color: rgba(255,255,255,0.8);
+}*/
+.MSSTYLE {
+	height:45px;
+	width:102px;
+	top:6px;
+	position: absolute;
+	background: rgba(76,76,76,0.7);
+	line-height: 45px;
+	font-family:SAO;
+	font-size: 25px;
+	color: rgba(255,255,255,0.6);
+	letter-spacing: 0.1em;
+	transition: all 0.2s ease-in-out;
+	text-align: center;
+	cursor: pointer;
+}
+.MS2STYLE {
+	height:45px;
+	width:90px;
+	top:6px;
+	position: absolute;
+	background: rgba(76,76,76,0.7);
+	line-height: 45px;
+	font-family:SAO;
+	font-size: 25px;
+	color: rgba(255,255,255,0.6);
+	letter-spacing: 0.1em;
+	transition: all 0.2s ease-in-out;
+	text-align: center;
+	cursor: pointer;
+}
+#SUBLOCAM {
+	width:320px;
+	height:51px;
+	position: relative;
+	top:12px;
+	left:0px;
+	cursor: pointer;
+}
+#SUBCHARM {
+	width:187px;
+	height:51px;
+	position: relative;
+	top:6px;
+	left:133px;
+	cursor: pointer;
+}
+#HOMEM {
+	width:86px;
+	left:234px;
+	top:0px;
+}
+#CHARM {
+	width:165px;
+	right:0px;
+	position: absolute;
+	top:0px;
+}
+#LOCAM {
+	width:145px;
+	position: absolute;
+	right:0px;
+	top:0px;
+}
+#TERMM {
+	width:175px;
+	left:145px;
+	top:18px;
+}
+#AINM {
+	left:0px;
+}
+#ALFM {
+	left:109px;
+}
+#GGOM {
+	right:0px;
+}
+#MALEM {
+	left:0px;
+}
+#FEMALEM {
+	right:0px;
+}
+#CHARV {
+	left:0px;
+	transition: all 0.2s ease-in-out;
+}
+#LOCAV {
+	left:0px;
+	transition: all 0.2s ease-in-out;
+}
+.CIRCLE {
+	top:400px;
+}
+.CIRCLEIN{
+	top:95px;
+}
+#SMNAVILINE {
+	position: relative;
+	margin-left:auto;
+	margin-right: auto;
+	top:50px;
+	width:340px;
+	height:14px;
+	background-image: url(../images/NAVILINE_53.png);
+	overflow: hidden;
+	background-position: center center;
+}
+#SMSMCONT {
+	top:35px;
+	position: relative;
+	width:520px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#NAVTIT {
+	position: relative;
+	margin-top:0px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#SMAINICON {
+	left:-5px;
+	top:-430px;
+}
+#SMALFICON {
+	left:-35px;
+	top:-367px;
+}
+#SMGGOICON {
+	top: -300px;
+	left:-45px;
+}
+#AINNAME {
+	top:-630px;
+	left:-140px;
+}
+#ALFNAME {
+	top:-567px;
+	left:-170px;
+}
+#GGONAME {
+	top:-500px;
+	left:-180px;
+}
+.SMNAME,.SMNAME2 {
+	display: none;
+}
+#SMLOCALINE,#SMCHARLINE {
+	opacity:0;
+}
+#SMMALEICON {
+	right:-5px;
+	top:-430px;
+}
+#SMFEMALEICON {
+	right:-35px;
+	top:-367px;
+}
+#MALENAME {
+	top:-440px;
+	right:-240px;
+}
+#FEMALENAME {
+	top:-377px;
+	right:-270px;
+}
+#SMFRAME {
+	background-image: url(../images/SITEMAP/SMBG2.png);
+}
+.CIRCLEIN {
+	background-image: url(../images/SITEMAP/SMBG2.png);
+	opacity:1;
+	position: relative;
+	border-radius: 50%;
+	background-position: -259px -445px;
+	width:250px;
+	height:250px;
+	margin-left:auto;
+	margin-right:auto;
+	overflow: hidden;
+	z-index: 1;
+	transform: scale(0.85);
+}
+.CIRCLE {
+	transform: scale(0.85);
+}
+#SMLOGO {
+
+	background-image: url(../images/SITEMAP/images/SMLOGOFIX_18.png);
+	width:153px;
+	height:115px;
+	opacity:0.8;
+	transform: scale(0.85);
+	z-index: 2;
+	margin-top:30px;
+	
+}
+.SMWICON {
+	transform: scale(0.85);
+	margin-top:30px;
+}
+.SMNAME,.SMNAME2 {
+	font-size:23px;
+}
+#CHECKOUT {
+	top:-500px;	
+	animation: BIENAO2 1.2s infinite ease-in-out;
+	opacity:1;
+}
+#CHECKOUTTEXT {
+	top:-550px;
+	animation: BIENAO3 1.2s forwards ease-in-out;
+}
+@keyframes BIENAO2 {
+	0%{opacity:0;top:-520px}
+	50%{opacity:0.7;}
+	100%{opacity:1;}
+}
+@keyframes BIENAO3 {
+	0%{opacity:0;top:-540px}
+	50%{opacity:0.5;}
+	100%{opacity:1;}
+}
+#SMSITEMAPNAME {
+	opacity:0.7;
+	top:50px;
+}
+
+/*CHARACTERS ----------------------------------------------------------------------------------------------------------------------------------------------*/
+.PAGE {
+	position: absolute;
+	font-family: SAO;
+	font-size:20px;
+	color:rgba(255,255,255,0.7);	
+	top:0px;
+	width:10px;
+	text-align: center;
+	
+}
+#SEP2 {
+	right:20px;
+	pointer-events: none;
+	font-family: none;
+	opacity:0.7;
+}
+#PAGE3 {
+	right:0px;
+	cursor: pointer;
+}
+
+#CHARTIT {
+	margin: -73px auto 0px auto;
+	width:180px;
+	height:40px;
+	text-align: center;
+	letter-spacing: 0.2em;
+	color:rgba(255,255,255,0.6);
+	display: block;
+	font-family: SAO;
+	font-size:30px;
+}
+#CHARTHUMBG {
+	width:441px;
+	
+}
+#thumb2 {
+	left:0px;
+}
+#thumb2border {
+	left:0px;
+}
+#thumb3 {
+	left:112px;
+}
+#thumb3border {
+	left:112px;
+}
+#thumb4 {
+	left:224px;
+}
+#thumb4border {
+	left:224px;
+}
+#thumb5 {
+	left:336px;
+}
+#thumb5border {
+	left:336px;
+}
+
+#thumb2c {
+	left:0px;
+}
+#thumb3c {
+	left:112px;
+}
+#thumb4c {
+	left:224px;
+}
+#thumb5c {
+	left:336px;
+}
+#thumb8{
+	left:56px;
+}
+#thumb8border {
+	left:56px;
+}
+#thumb9{
+	left:168px;
+}
+#thumb9border {
+	left:168px;
+}
+#thumb10{
+	left:280px;
+}
+#thumb10border {
+	left:280px;
+}
+#thumb2c2 {
+	left:56px;
+}
+#thumb3c2 {
+	left:168px;
+}
+#thumb4c2 {
+	left:280px;
+}
+#CHARNAVILINE {
+	position: relative;
+	margin-left:auto;
+	margin-right: auto;
+	width:340px;
+	height:14px;
+	background-image: url(../images/NAVILINE_53.png);
+	overflow: hidden;
+	background-position: center center;	
+}
+#CHARCONT {
+	position: relative;
+	top:-15px;
+	width:520px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#CHARCONTENT {
+	position: relative;
+	margin:0px auto 0px auto;
+	width:620px;
+	height:627px;
+}
+.CHARMP {
+	top:35px;
+	left: 70px;
+}
+.CHARHP {
+	left: 70px;
+}
+.ATTRCONT {
+	left: 70px;
+	transform:scaleX(0.7);
+	transform-origin: top left;
+}
+.CHARDEF {
+	left: 70px;
+	transform:scaleX(0.7);
+	transform-origin: top left;
+}
+.CHARCRIT {
+	left: 70px;
+	transform:scaleX(0.7);
+	transform-origin: top left;
+}
+.CHARATK {
+	left: 70px;	
+	transform:scaleX(0.7);
+	transform-origin: top left;
+}
+.CHARATTRtit,.CHARATTRstat {
+	transform:scaleX(1.3);
+	transform-origin: top left;
+}
+
+.WEAPON {
+	left:70px;
+}
+.WEAPONNAME {
+	left:140px;
+}
+.CHARINTRO {
+	top:450px;
+	left:70px;
+	font-size:18px;
+	width: 250px;
+	
+}
+.CHARGNAME {
+	top:250px;
+	left:70px;
+	transform: perspective( 0px ) rotateY( 0deg );
+}
+.GENDER {
+	top:-240px;
+	left:315px;
+}
+.LEVEL {
+	position: absolute;
+	top:-232px;
+	left:375px;
+	width:100px;
+	height:20px;
+	font-family: SAO;
+	font-size: 18px;
+	color:rgba(255,255,255,0.7);
+	letter-spacing: 0.1em;
+	text-align: left;
+	
+}
+#hr1 {
+	margin-top:145px;
+
+}
+.CHARZNAME {
+	top:70px;
+	left:0px;
+}
+.CHAREPITHET {
+	top:163.5px;
+	left:0px;
+}
+#CHARTHUMBG {
+	margin-top:-70px;
+}
+#CHARCONTENT {
+	margin-top:40px;
+}
+
+#CHARNAVILINE {
+	margin-top:50px;
+}
+.effex {
+
+	bottom:-40px;
+	left:400px;
+}
+.effex2 {
+
+	bottom:-40px;
+	left:400px;
+}
+#e2 {
+	left:450px;
+	background:rgba(78,173,201,0.5);
+}
+#e3 {
+	left: 500px;
+}
+#e4,#e9 {
+	left:350px;
+	background:rgba(78,173,201,0.5);
+}
+#e5 {
+	left:550px;
+}
+#e7,#e12,#e17 {
+	left:450px;
+	background:rgba(78,173,201,0.5);
+}
+#e13,#e18 {
+	left: 500px;
+	background:rgba(78,173,201,0.5);
+}
+#e14,#e19 {
+	left:350px;
+	background:rgba(78,173,201,0.2);
+}
+#e15,#e20 {
+	left:550px;
+	background:rgba(78,173,201,0.5);
+}
+
+#e8 {
+	left: 500px;
+	background:rgba(78,173,201,0.2);
+}
+
+#e10 {
+	left:550px;
+	background:rgba(78,173,201,0.2);
+}
+.CHARAVA {
+	transform:translateX(0px);
+	
+}
+#LOCAFRAME {
+
+	height: 1800px;
+
+}
+#TESTT {
+	float:left;
+	margin-right:50px;
+}
+#li2{
+	float:left;
+	margin-right:50px;
+}
+#li3 {
+	float:left;
+	margin-right:50px;
+}
+#li4 {
+	float:left;
+	margin-right:50px;
+}
+#li5 {
+	float:left;
+	margin-right:50px;
+}
+
+#NAVIPANEL,#SHOWPANEL {
+	transform:rotateY(0deg);
+}
+#INTROPANEL {
+	transform:translateZ(0px);
+}
+.AREAbody {
+	margin-left:50px;
+	margin-top:60px;
+}
+#LCOL1,#NAVIPANEL {
+	height:250px;
+}
+#LCOL3,#SHOWPANEL {
+	height:400px;
+}
+.TITLESTYLE1 {
+	margin-top:50px;
+}
+.TITLESTYLE2 {
+	margin-top:0px;
+}
+.TITLESTYLE3 {
+	margin-top:-50px;
+}
+.GACONTAINER {
+	margin-top:70px;
+	width:300px;
+}
+.GACONTAINER2 {
+	width:300px;
+}
+#LARGETHUMB,#SMALLTHUMB1,#SMALLTHUMB2 {
+	transform:rotateY(0deg);
+	left:0px;
+}
+.EVENTBODY {
+	margin-right:35px;
+	margin-left:35px;
+}
+#LPAGINATION {
+	
+	margin:40px auto 0px auto;
+}
+#LOCATHUMBG {	
+	background:none;
+}
+#LOCAZNAVILINE {
+	margin-top:100px;
+	margin-left:auto;
+	margin-right:auto;
+	width:300px;
+	height:14px;
+}
+#LOCAZNAVILINE2 {
+	margin-top:0px;
+	margin-left:auto;
+	margin-right:auto;
+	width:300px;
+	height:14px;
+}
+#LOCAZNAVILINE3 {
+	width:300px;
+}
+#CHARCONT2 {
+	width:480px;
+}
+

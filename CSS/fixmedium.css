@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+
+.LPANEL {
+	
+	height:300px;
+	width:70%;
+	box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+	margin-bottom:50px;
+
+}
+#AINPANEL {
+	background-position: 0px;
+}
+#ALFPANEL {
+	background-position: -200px;
+	background-size: 180% auto;
+
+}
+#GGOPANEL {
+	background-position: -200px;
+	background-size: 180% auto;
+
+}
+#LOCATHUMBG1 {
+	background: none;
+}
+#LOCAFRAME1 {
+	height:1500px;
+}
+.BLACKNAME {
+	margin-top:100px;
+}

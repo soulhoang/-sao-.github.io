@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'SAO';
+	src: url('SAOUI-Bold.eot');
+	src: url('SAOUI-Bold.eot?#iefix') format('embedded-opentype'),
+		url('SAOUI-Bold.woff') format('woff'),
+		url('SAOUITT-Bold.ttf') format('truetype'),
+		url('SAOUI-Bold.svg') format('svg');
+}

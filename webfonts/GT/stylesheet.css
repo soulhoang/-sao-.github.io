@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'GT';
+	src: url('good times rg.eot');
+	src: url('good times rg.eot?#iefix') format('embedded-opentype'),
+		url('good times rg.woff') format('woff'),
+		url('good times rg.ttf') format('truetype'),
+		url('good times rg.svg') format('svg');
+}

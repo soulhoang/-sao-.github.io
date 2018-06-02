@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+
+#LPAGINATION {
+	display: none;
+}
+.LPAGE {
+	display:none;
+}
+#LPAGE1 {
+	display: none;
+}
+#LPAGE2 {
+	display: none;
+}
+#LSEP {
+	display:none;
+}

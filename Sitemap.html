@@ -1,0 +1,884 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sitemap | S.A.O Universe</title>
+<link rel="stylesheet" href="CSS/main.css" />
+<link rel="stylesheet" media="(min-width: 0px) and (max-width: 480px)" href="CSS/small.css" />
+<link rel="stylesheet" media="(min-width: 1001px) and (max-width: 3000px)" href="CSS/large.css" />
+<link rel="stylesheet" media="(min-width: 901px) and (max-width: 1100px)" href="CSS/text.css" />
+<link rel="stylesheet" media="(min-width: 800px) and (max-width: 900px)" href="CSS/text2.css" />
+<link rel="stylesheet" media="(min-width: 0px) and (max-width: 799px)" href="CSS/text3.css" />
+<link rel="stylesheet" media="(min-width: 0px) and (max-width: 500px)" href="CSS/sinon.css" />
+<link rel="stylesheet" media="(min-width: 769px) and (max-width: 1000px)" href="CSS/medium2.css" />
+<link rel="stylesheet" media="(min-width: 515px) and (max-width: 768px)" href="CSS/medium.css" />
+<link rel="stylesheet" media="(min-width: 0px) and (max-width: 600px)" href="CSS/medium222.css"/>
+<link rel="stylesheet" media="(min-width: 0px) and (max-width: 514px)" href="CSS/medium22.css"/>
+
+<!-- <link href="CSS/bootstrap.css" rel="stylesheet"> -->
+<link href="css/bootstrap-3.3.7.css" rel="stylesheet" type="text/css">
+<style>
+	h3 {
+	font-family: SAO;
+	color:white;
+	font-size:50px;
+	letter-spacing: 0.1em;
+	}
+	</style>
+<script src="JS/jquery-3.3.1.min.js"></script>
+<script src="JS/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap-3.3.7.js"></script>
+<script>
+	  $(document).ready(function() {
+		  		  function updateClock() { document.getElementById("SMTIME").innerHTML = new Date().toLocaleTimeString('en-US', { hour12: false, 
+                                             hour: "numeric", 
+                                             minute: "numeric"}) }
+		  updateClock();
+		  setInterval(updateClock, 1000);
+/*		  			  $("#LOGIN").hover(function(){
+					$(this).css({backgroundImage:'url(images/LOG-IN-ACTIVE_25.png)'});
+				},function(){
+					 $(this).css({backgroundImage:'url(images/LOG-IN_05.png)'});
+				});*/
+		   $("#X2").hide();
+		  var ABC = 1;
+		  /*$("#LOGIN").hover(function() {
+			  $( this ).css({backgroundImage:'url(images/LOG-IN-ACTIVE_25.png)'});
+			  
+		  }, function() {
+			  $( this ).css({backgroundImage:'url(images/LOG-IN_05.png)'});
+		  }
+		)*/
+		  
+		  $("#LOGIN").click(function() {
+			  $( this ).css({backgroundImage:'url(images/LOGIN_active.png)'});
+			  
+			/*  $("#LOGIN").hover(function() {
+			  $( this ).css({backgroundImage:'url(images/LOGIN_active.png)'});
+			  
+		  }, function() {
+			  $( this ).css({backgroundImage:'url(images/LOGIN_active.png)'});
+		  }
+		)*/
+			  
+			  
+			  $(".form").css({transform:"scaleY(1)"});
+			  $("#X2").delay(200).show(0);
+			  $("#X").delay(200).hide(0);
+/*			    $("#LOGIN").hover(function(){
+					$(this).css({backgroundImage:'url(images/LOGIN_active.png)'});
+				},function(){
+					 $(this).css({backgroundImage:'url(images/LOGIN_active.png)'});
+				});*/
+		  })		 
+			  $(".input" ).focus(); 
+
+		  $("#X2").click(function() {
+			  $("#X").show(0);
+			  $("#LOGIN").css({backgroundImage:'url(images/LOG-IN_05.png)'});
+			  $(".form").css({transform:"scaleY(0)"});
+			  $(this).hide();
+			  $("form").find("input[type=text], textarea").val("");
+			  $("form").find("input[type=password], textarea").val("");
+/*			  $("#LOGIN").hover(function(){
+					$(this).css({backgroundImage:'url(images/LOG-IN-ACTIVE_25.png)'});
+				},function(){
+					 $(this).css({backgroundImage:'url(images/LOG-IN_05.png)'});
+				});*/
+			  
+			  
+		  })
+
+		  $("#SUBCHARM").hide();
+		  $("#SUBLOCAM").hide();
+		   var PRO = 1;
+		   var VIP = 1;
+		  $("#CHARV").click(function() {
+		 
+			  if (PRO == 1) {
+				  $("#DECORMID").animate({height: '+=51'}, 500);
+				  $("#SUBCHARM").slideDown(500);
+				  $("#CHARM").css({backgroundColor:'rgba(235,166,1,0.8)',color: 'rgba(255,255,255,0.8)'});
+			  	  $("#CHARV").css({transform:"rotate(180deg)"});
+
+			  PRO = 0;
+		  }
+			  else {
+				  $("#DECORMID").animate({height: '-=51'}, 500);
+				  $("#SUBCHARM").slideUp(500);
+				  $("#CHARM").css({backgroundColor:'rgba(255,255,255,0.7)',color: 'rgba(0,0,0,0.5)'});
+			  	  $("#CHARV").css({transform:"rotate(-360deg)"});
+				  
+			  PRO = 1;
+		  }
+			  
+		  })
+		  
+		  $("#LOCAV").click(function() {
+		 
+			  if (VIP == 1) {
+				  $("#DECORMID").stop(true);
+				  $("#SUBLOCAM").stop(true);
+				  $("#DECORMID").animate({height: '+=51'}, 500);
+				  $("#SUBLOCAM").slideDown(500);
+				  $("#LOCAM").css({backgroundColor:'rgba(235,166,1,0.8)',color: 'rgba(255,255,255,0.8)'});
+			  	  $("#LOCAV").css({transform:"rotate(180deg)"});
+
+			  VIP = 0;
+		  }
+			  else {
+				  $("#DECORMID").stop(true);
+				  $("#SUBLOCAM").stop(true);
+				  $("#DECORMID").animate({height: '-=51'}, 500);
+				  $("#SUBLOCAM").slideUp(500);
+				  $("#LOCAM").css({backgroundColor:'rgba(255,255,255,0.7)',color: 'rgba(0,0,0,0.5)'});
+			  	  $("#LOCAV").css({transform:"rotate(-360deg)"});
+				  
+			  VIP = 1;
+		  }
+			  
+		  })
+				  
+		  var FLAG = 1;
+		  $("#MENUNAV").css({backgroundImage:'url(images/MENU_icon_24.png)'});
+//		  $("#MENUNAV").focus(
+//				  function() {
+//					$( this ).css({backgroundImage:'url(images/MENUICON_active.png)'});
+//				  }
+//				);
+		  $("#MENUNAV").click(function() {
+			  if (FLAG == 1) {
+				  $("#MENUMID").stop(true);
+				  $("#MENUMID").animate({marginRight:0});
+				  $("#MENUNAV").css({backgroundImage:'url(images/CLOSEMENU_icon_24.png)'});
+				  FLAG = 0;
+			  }
+			  else {
+//		  $("#MENUNAV").focus(
+//				  function() {
+//					$( this ).css({backgroundImage:'url(images/CLOSEICON_active.png)'});
+//				  }
+//				);
+				  
+				  $("#DECORMID").css({height: '281'});
+				  $("#SUBCHARM").hide();
+				  $("#SUBLOCAM").hide();
+				  $("#CHARM").css({backgroundColor:'rgba(255,255,255,0.7)',color: 'rgba(0,0,0,0.5)'});
+				  $("#LOCAM").css({backgroundColor:'rgba(255,255,255,0.7)',color: 'rgba(0,0,0,0.5)'});
+				  $("#LOCAV").css({transform:"none"});
+				  $("#CHARV").css({transform:"none"});
+				  $("#MENUMID").stop(true);
+				  $("#MENUMID").animate({marginRight:-352});
+				  $("#MENUNAV").css({backgroundImage:'url(images/MENU_icon_24.png)'});
+//				  $("#MENUNAV").focus(
+//				  function() {
+//					$( this ).css({backgroundImage:'url(images/MENUICON_active.png)'});
+//				  }
+//				);
+				  FLAG = 1;
+				  VIP = 1;
+				  PRO = 1;
+			  }
+			  
+			  
+		  })
+		  
+	 
+	function CLEARLOCA() {
+	$("#SMAINICON").css({backgroundImage:'url(images/aincradSM.png)'});
+	$("#SMALFICON").css({backgroundImage:'url(images/alfheimSM.png)'});
+	$("#SMGGOICON").css({backgroundImage:'url(images/ggoSM.png)'});
+	}
+	
+	function CLEARCHAR() {
+	$("#SMMALEICON").css({backgroundImage:'url(images/maleSM.png)'});
+	$("#SMFEMALEICON").css({backgroundImage:'url(images/femaleSM.png)'});
+	}
+	
+	function CLEARMENUMID() {
+	$("#DECORMID").css({height: '281'});
+	$("#SUBCHARM").hide();
+	$("#SUBLOCAM").hide();
+	$("#CHARM").css({backgroundColor:'rgba(255,255,255,0.7)',color: 'rgba(0,0,0,0.5)'});
+	$("#LOCAM").css({backgroundColor:'rgba(255,255,255,0.7)',color: 'rgba(0,0,0,0.5)'});
+	$("#LOCAV").css({transform:"none"});
+	$("#CHARV").css({transform:"none"});		  
+	$("#MENUMID").animate({marginRight:-352});
+	$("#MENUNAV").css({backgroundImage:'url(images/MENU_icon_24.png)'});
+	FLAG = 1;
+	VIP = 1;
+	PRO = 1;
+	}
+		  
+	function CLEARLOGIN() {
+	$("#X").show(0);
+	$("#LOGIN").css({backgroundImage:'url(images/LOG-IN_05.png)'});
+	$(".form").css({transform:"scaleY(0)"});
+	$("#X2").hide();
+	$("form").find("input[type=text], textarea").val("");
+	$("form").find("input[type=password], textarea").val("");
+	}
+
+	
+$(window).bind("load resize",function() {
+	
+	$("#SMSITEMAPNAME").css({opacity:0,top:"20px"});
+	$("#CHECKOUT, #CHECKOUTTEXT").css({display:"block"});
+	CLEARMENUMID();
+	CLEARLOGIN();	
+	CLEARCHAR();
+	CLEARLOCA();
+	$("#NAVTIT").html("WELCOME")
+	$("#SMINTRO").css({opacity:"0",marginTop:"-10px"});
+	$("#BLADE").css({display:"none"});
+	$(".seg-1 , .seg-2 , .seg-3 , .seg-4, .seg-5").css({backgroundColor:'rgba(255,255,255,0.7)'});
+	$("#SMSITEMAPICON").hover(function() {
+		$("#SMSITEMAPNAME").css({opacity:0.7,top:"50px"});
+	}, function(){
+		$("#SMSITEMAPNAME").css({opacity:0,top:"20px"});
+	})
+	
+		if($(window).width() > 768) {	
+
+	$("#SMINTRO").css({display:"none"});
+	$("#BLADE").css({display:"none"});
+	$("#SMSMLINK").attr("href","Sitemap.html");
+	$("#SMHLINK").attr("href","Home.html");
+	$("#SMTLINK").attr("href","Terminology.html");			
+	$("#SMCLINK").attr("href","Characters.html");	
+	$("#SMLLINK").attr("href","Locations.html");
+	$("#SMLAINLINK").attr("href","Aincrad.html");			
+	$("#SMLALFLINK").attr("href","Alfheim.html");	
+	$("#SMLGGOLINK").attr("href","Gun Gale.html");
+	$("#SMCMLINK").attr("href","Male.html");			
+	$("#SMCFLINK").attr("href","Female.html");		
+			
+	$(".seg-1 , .seg-2 , .seg-3 , .seg-4, .seg-5").css({backgroundColor:'rgba(255,255,255,0.7)'});	
+	CLEARCHAR();
+	CLEARLOCA();
+	
+	function WELCOME() {
+	$("#NAVTIT").css({opacity:"0",transform:"scale(1.2)"});
+	$("#NAVTIT").delay(200).promise().done(function() {
+	$("#NAVTIT").html("WELCOME").css({opacity:"1",transform:"scale(1)"});
+	})
+	}
+	
+/*	On Page Load*/
+	
+
+		
+	
+	
+	$(".seg-5").hover(function(){
+		$(this).stop(true);
+		$("#NAVTIT").stop(true);
+		$(this).css({backgroundColor:'rgba(235,166,1,0.9)'});
+	$("#NAVTIT").css({opacity:"0",transform:"scale(1.2)"});
+	$("#NAVTIT").delay(200).promise().done(function() {
+		$("#NAVTIT").html("HOME").css({opacity:"1",transform:"scale(1)"});
+		$("#NAVTIT").html("HOME").css({opacity:"1",transform:"scale(1)"});
+	})
+	$("#CHECKOUT, #CHECKOUTTEXT").css({display:"none"});
+	
+},function(){
+     WELCOME();
+			$(this).css({backgroundColor:'rgba(255,255,255,0.7)'});	
+});
+	
+	$(".seg-4").hover(function(){
+		$(this).stop(true);
+		$("#NAVTIT").stop(true);
+		$(this).css({backgroundColor:'rgba(235,166,1,0.9)'});
+	$("#NAVTIT").css({opacity:"0",transform:"scale(1.2)"});
+	$("#NAVTIT").delay(200).promise().done(function() {
+		$("#NAVTIT").html("TERMINOLOGY").css({opacity:"1",transform:"scale(1)"});
+	})
+	$("#CHECKOUT, #CHECKOUTTEXT").css({display:"none"});
+	
+},function(){
+     WELCOME();
+			$(this).css({backgroundColor:'rgba(255,255,255,0.7)'});	
+});
+	
+	$(".seg-3").hover(function(){
+		$(this).stop(true);
+		$("#NAVTIT").stop(true);
+		$(this).css({backgroundColor:'rgba(235,166,1,0.9)'});
+	$("#NAVTIT").css({opacity:"0",transform:"scale(1.2)"});
+	$("#NAVTIT").delay(200).promise().done(function() {
+		$("#NAVTIT").html("SITEMAP").css({opacity:"1",transform:"scale(1)"});
+	})
+	$("#CHECKOUT, #CHECKOUTTEXT").css({display:"none"});
+	
+},function(){
+     WELCOME();
+		$(this).css({backgroundColor:'rgba(255,255,255,0.7)'});	
+});
+	$(".seg-2").hover(function(){
+	$(this).stop(true);
+	$("#NAVTIT").stop(true);
+	$("#FEMALENAME").stop(true);
+	$("#MALENAME").stop(true);	
+	$(this).css({backgroundColor:'rgba(235,166,1,0.9)'});		
+	$("#NAVTIT").css({opacity:"0",transform:"scale(1.2)"});
+	$("#SMMALEICON").css({backgroundImage:'url(images/male.png)'});
+	$("#SMFEMALEICON").css({backgroundImage:'url(images/female.png)'});
+	$("#SMCHARLINE").css("border-top-width", "4px");
+	$("#SMCHARLINE").css("border-left-width", "5px");	
+	$(".SMNAME2").css({transform:"translateX(15px)"});
+	$(".SMNAME2").delay(200).promise().done(function() {
+		$(".SMNAME2").css({transform:"translateX(0px)"});
+	})		
+	$("#NAVTIT").delay(200).promise().done(function() {
+		$("#NAVTIT").html("CHARACTERS").css({opacity:"1",transform:"scale(1)"});
+	})
+	$("#CHECKOUT, #CHECKOUTTEXT").css({display:"none"});
+	
+},function(){
+     WELCOME();
+	$("#SMMALEICON").css({backgroundImage:'url(images/maleSM.png)'});
+	$("#SMFEMALEICON").css({backgroundImage:'url(images/femaleSM.png)'});
+	$("#SMCHARLINE").css("border-top-width", "2px");
+	$("#SMCHARLINE").css("border-left-width", "3px");
+	$(this).css({backgroundColor:'rgba(255,255,255,0.7)'});	
+	
+});
+	$("#SMMALEICON").hover(function(){
+	$(this).stop(true);
+	$("#NAVTIT").stop(true);
+	$("#MALENAME").stop(true);		
+	$(".seg-2").css({backgroundColor:'rgba(235,166,1,0.9)'});
+	$("#NAVTIT").css({opacity:"0",transform:"scale(1.2)"});
+	$("#SMMALEICON").css({backgroundImage:'url(images/male.png)'});
+	$("#SMCHARLINE").css("border-top-width", "4px");
+	$("#SMCHARLINE").css("border-left-width", "5px");	
+	$("#MALENAME").css({transform:"translateX(15px)"});
+	$("#MALENAME").delay(200).promise().done(function() {
+	$("#MALENAME").css({transform:"translateX(0px)"});
+	})		
+	$("#NAVTIT").delay(200).promise().done(function() {
+	$("#NAVTIT").html("CHAR > Male").css({opacity:"1",transform:"scale(1)"});
+	})
+	$("#CHECKOUT, #CHECKOUTTEXT").css({display:"none"});
+	
+},function(){
+     WELCOME();
+	$("#SMMALEICON").css({backgroundImage:'url(images/maleSM.png)'});
+	$("#SMCHARLINE").css("border-top-width", "2px");
+	$("#SMCHARLINE").css("border-left-width", "3px");
+	$(".seg-2").css({backgroundColor:'rgba(255,255,255,0.7)'});	
+});
+	$("#SMFEMALEICON").hover(function(){
+	$(this).stop(true);
+	$("#NAVTIT").stop(true);
+	$("#FEMALENAME").stop(true);		
+	$(".seg-2").css({backgroundColor:'rgba(235,166,1,0.9)'});
+	$("#NAVTIT").css({opacity:"0",transform:"scale(1.2)"});
+	$(this).css({backgroundImage:'url(images/female.png)'});
+	$("#SMCHARLINE").css("border-top-width", "4px");
+	$("#SMCHARLINE").css("border-left-width", "5px");	
+	$("#FEMALENAME").css({transform:"translateX(15px)"});
+	$("#FEMALENAME").delay(200).promise().done(function() {
+	$("#FEMALENAME").css({transform:"translateX(0px)"});
+	})		
+	$("#NAVTIT").delay(200).promise().done(function() {
+	$("#NAVTIT").html("CHAR > Female").css({opacity:"1",transform:"scale(1)"});
+	})
+	$("#CHECKOUT, #CHECKOUTTEXT").css({display:"none"});
+	
+},function(){
+     WELCOME();
+	$(this).css({backgroundImage:'url(images/femaleSM.png)'});
+	$("#SMCHARLINE").css("border-top-width", "2px");
+	$("#SMCHARLINE").css("border-left-width", "3px");
+	$(".seg-2").css({backgroundColor:'rgba(255,255,255,0.7)'});	
+});
+	$(".seg-1").hover(function(){
+	$(this).stop(true);
+	$("#NAVTIT").stop(true);
+	$("#AINNAME").stop(true);
+	$("#ALFNAME").stop(true);
+	$("#GGONAME").stop(true);		
+	$(this).css({backgroundColor:'rgba(235,166,1,0.9)'});	
+	$("#NAVTIT").css({opacity:"0",transform:"scale(1.2)"});
+	$("#SMAINICON").css({backgroundImage:'url(images/aincrad.png)'});
+	$("#SMALFICON").css({backgroundImage:'url(images/alfheim.png)'});
+	$("#SMGGOICON").css({backgroundImage:'url(images/ggo.png)'});
+	$("#SMLOCALINE").css("border-top-width", "4px");
+	$("#SMLOCALINE").css("border-right-width", "5px");
+	$(".SMNAME").css({transform:"translateX(-15px)"});
+	$(".SMNAME").delay(200).promise().done(function() {
+		$(".SMNAME").css({transform:"translateX(0px)"});
+	})	
+	$("#NAVTIT").delay(200).promise().done(function() {
+		$("#NAVTIT").html("LOCATIONS").css({opacity:"1",transform:"scale(1)"});
+	})
+	$("#CHECKOUT, #CHECKOUTTEXT").css({display:"none"});
+	
+},function(){
+     WELCOME();
+	 $("#SMAINICON").css({backgroundImage:'url(images/aincradSM.png)'});
+	$("#SMALFICON").css({backgroundImage:'url(images/alfheimSM.png)'});
+	$("#SMGGOICON").css({backgroundImage:'url(images/ggoSM.png)'});
+	$("#SMLOCALINE").css("border-top-width", "2px");
+	$("#SMLOCALINE").css("border-right-width", "3px");
+	$(this).css({backgroundColor:'rgba(255,255,255,0.7)'});
+});
+	$("#SMAINICON").hover(function(){
+	$(this).stop(true);
+	$("#NAVTIT").stop(true);
+	$("#AINNAME").stop(true);	
+	$(".seg-1").css({backgroundColor:'rgba(235,166,1,0.9)'});
+	$("#NAVTIT").css({opacity:"0",transform:"scale(1.2)"});
+	$(this).css({backgroundImage:'url(images/aincrad.png)'});
+	$("#SMLOCALINE").css("border-top-width", "4px");
+	$("#SMLOCALINE").css("border-left-width", "5px");	
+	$("#AINNAME").css({transform:"translateX(-15px)"});
+	$("#AINNAME").delay(200).promise().done(function() {
+	$("#AINNAME").css({transform:"translateX(0px)"});
+	})		
+	$("#NAVTIT").delay(200).promise().done(function() {
+	$("#NAVTIT").html("LOCA > Aincrad").css({opacity:"1",transform:"scale(1)"});
+	})
+	$("#CHECKOUT, #CHECKOUTTEXT").css({display:"none"});
+	
+},function(){
+     WELCOME();
+	$(this).css({backgroundImage:'url(images/aincradSM.png)'});
+	$("#SMLOCALINE").css("border-top-width", "2px");
+	$("#SMLOCALINE").css("border-left-width", "3px");
+	$(".seg-1").css({backgroundColor:'rgba(255,255,255,0.7)'});	
+});
+	$("#SMALFICON").hover(function(){
+	$(this).stop(true);
+		$("#NAVTIT").stop(true);
+		$("#ALFNAME").stop(true);
+	$(".seg-1").css({backgroundColor:'rgba(235,166,1,0.9)'});
+	$("#NAVTIT").css({opacity:"0",transform:"scale(1.2)"});
+	$(this).css({backgroundImage:'url(images/alfheim.png)'});
+	$("#SMLOCALINE").css("border-top-width", "4px");
+	$("#SMLOCALINE").css("border-left-width", "5px");	
+	$("#ALFNAME").css({transform:"translateX(-15px)"});
+	$("#ALFNAME").delay(200).promise().done(function() {
+	$("#ALFNAME").css({transform:"translateX(0px)"});
+	})		
+	$("#NAVTIT").delay(200).promise().done(function() {
+	$("#NAVTIT").html("LOCA > Alfheim").css({opacity:"1",transform:"scale(1)"});
+	})
+	$("#CHECKOUT, #CHECKOUTTEXT").css({display:"none"});
+	
+},function(){
+     WELCOME();
+	$(this).css({backgroundImage:'url(images/alfheimSM.png)'});
+	$("#SMLOCALINE").css("border-top-width", "2px");
+	$("#SMLOCALINE").css("border-left-width", "3px");
+	$(".seg-1").css({backgroundColor:'rgba(255,255,255,0.7)'});	
+});
+	$("#SMGGOICON").hover(function(){
+	$(this).stop(true);
+		$("#NAVTIT").stop(true);
+		$("#GGONAME").stop(true);
+	$(".seg-1").css({backgroundColor:'rgba(235,166,1,0.9)'});
+	$("#NAVTIT").css({opacity:"0",transform:"scale(1.2)"});
+	$(this).css({backgroundImage:'url(images/ggo.png)'});
+	$("#SMLOCALINE").css("border-top-width", "4px");
+	$("#SMLOCALINE").css("border-left-width", "5px");	
+	$("#GGONAME").css({transform:"translateX(-15px)"});
+	$("#GGONAME").delay(200).promise().done(function() {
+	$("#GGONAME").css({transform:"translateX(0px)"});
+	})		
+	$("#NAVTIT").delay(200).promise().done(function() {
+	$("#NAVTIT").html("LOCA > Gun Gale").css({opacity:"1",transform:"scale(1)"});
+	})
+	$("#CHECKOUT, #CHECKOUTTEXT").css({display:"none"});
+},function(){
+     WELCOME();
+	$(this).css({backgroundImage:'url(images/ggoSM.png)'});
+	$("#SMLOCALINE").css("border-top-width", "2px");
+	$("#SMLOCALINE").css("border-left-width", "3px");
+	$(".seg-1").css({backgroundColor:'rgba(255,255,255,0.7)'});	
+});
+	$(".seg").off("click");	
+	$(".SMWICON").off("click");				
+	}
+else {
+
+//	alert("a");
+	
+	$("#SMSMLINK").removeAttr("href");
+	$("#SMHLINK").removeAttr("href");
+	$("#SMTLINK").removeAttr("href");		
+	$("#SMCLINK").removeAttr("href");
+	$("#SMLLINK").removeAttr("href");
+	$("#SMLAINLINK").removeAttr("href");			
+	$("#SMLALFLINK").removeAttr("href");
+	$("#SMLGGOLINK").removeAttr("href");
+	$("#SMCMLINK").removeAttr("href");			
+	$("#SMCFLINK").removeAttr("href");	
+	$("#NAVTIT").stop(true);
+	
+	$("#SMINTRO").css({display:"block"});
+	function WELCOME() {
+	$("#NAVTIT").css({opacity:"0",transform:"scale(1.2)"});
+	$("#NAVTIT").delay(200).promise().done(function() {
+	$("#NAVTIT").html("WELCOME").css({opacity:"1",transform:"scale(1)"});
+	})
+	}
+	
+/*	On Page Load*/
+
+	$(".seg-5").click(function(){
+		$("#CHECKOUT, #CHECKOUTTEXT").css({display:"none"});
+		$(this).css({backgroundColor:'rgba(235,166,1,0.9)'});
+		$("#NAVTIT").stop(true);
+	$("#NAVTIT").css({opacity:"0",transform:"scale(1.2)"});
+	$("#NAVTIT").delay(200).promise().done(function() {
+		$("#NAVTIT").html("HOME").css({opacity:"1",transform:"scale(1)"});
+		$("#SMINTRO").css({opacity:"1",marginTop:"30px"});
+		$("#BLADE").css({display:"block"});
+		$("#SMMAINLINK").attr("href","Home.html");
+	})
+	
+	$(".seg-1 , .seg-2 , .seg-3 , .seg-4").css({backgroundColor:'rgba(255,255,255,0.7)'});	
+	CLEARCHAR();
+	CLEARLOCA();	
+});	
+	$(".seg-5").off("mouseenter mouseleave");
+	
+	$(".seg-4").click(function(){
+		$("#NAVTIT").stop(true);
+		$("#CHECKOUT, #CHECKOUTTEXT").css({display:"none"});
+		$(this).css({backgroundColor:'rgba(235,166,1,0.9)'});
+	$("#NAVTIT").css({opacity:"0",transform:"scale(1.2)"});
+	$("#NAVTIT").delay(200).promise().done(function() {
+		$("#NAVTIT").html("TERMINOLOGY").css({opacity:"1",transform:"scale(1)"});
+		$("#SMINTRO").css({opacity:"1",marginTop:"30px"});
+		$("#BLADE").css({display:"block"});
+		$("#SMMAINLINK").attr("href","Terminology.html");
+	})
+	$(".seg-1 , .seg-2 , .seg-3 , .seg-5").css({backgroundColor:'rgba(255,255,255,0.7)'});
+	CLEARCHAR();
+	CLEARLOCA();
+});
+	$(".seg-4").off("mouseenter mouseleave");
+	$(".seg-3").click(function(){
+		$("#NAVTIT").stop(true);
+		$("#CHECKOUT, #CHECKOUTTEXT").css({display:"none"});
+		$(this).css({backgroundColor:'rgba(235,166,1,0.9)'});
+	$("#NAVTIT").css({opacity:"0",transform:"scale(1.2)"});
+	$("#NAVTIT").delay(200).promise().done(function() {
+		$("#NAVTIT").html("SITEMAP").css({opacity:"1",transform:"scale(1)"});
+		$("#SMINTRO").css({opacity:"1",marginTop:"30px"});
+		$("#BLADE").css({display:"block"});
+		$("#SMMAINLINK").attr("href","Sitemap.html");
+	})
+	$(".seg-1 , .seg-2 , .seg-4 , .seg-5").css({backgroundColor:'rgba(255,255,255,0.7)'});
+	CLEARCHAR();
+	CLEARLOCA();	
+});
+	$(".seg-3").off("mouseenter mouseleave");
+	
+	$(".seg-2").click(function(){
+		$("#NAVTIT").stop(true);
+		$("#CHECKOUT, #CHECKOUTTEXT").css({display:"none"});
+		$(this).css({backgroundColor:'rgba(235,166,1,0.9)'});
+	$("#NAVTIT").css({opacity:"0",transform:"scale(1.2)"});
+	$("#NAVTIT").delay(200).promise().done(function() {
+		$("#NAVTIT").html("CHARACTERS").css({opacity:"1",transform:"scale(1)"});
+		$("#SMINTRO").css({opacity:"1",marginTop:"30px"});
+		$("#BLADE").css({display:"block"});
+		$("#SMMAINLINK").attr("href","Characters.html");
+	})
+	$(".seg-1 , .seg-5 , .seg-3 , .seg-4").css({backgroundColor:'rgba(255,255,255,0.7)'});
+	CLEARLOCA();	
+	$("#SMMALEICON").css({backgroundImage:'url(images/male.png)'});
+	$("#SMFEMALEICON").css({backgroundImage:'url(images/female.png)'});	
+	
+});
+	$(".seg-2").off("mouseenter mouseleave");
+	
+	$(".seg-1").click(function(){
+		$("#NAVTIT").stop(true);
+		$("#CHECKOUT, #CHECKOUTTEXT").css({display:"none"});
+		$(this).css({backgroundColor:'rgba(235,166,1,0.9)'});
+	$("#NAVTIT").css({opacity:"0",transform:"scale(1.2)"});
+	$("#NAVTIT").delay(200).promise().done(function() {
+		$("#NAVTIT").html("LOCATIONS").css({opacity:"1",transform:"scale(1)"});
+		$("#SMINTRO").css({opacity:"1",marginTop:"30px"});
+		$("#BLADE").css({display:"block"});
+		$("#SMMAINLINK").attr("href","Locations.html");
+	})
+	$(".seg-4 , .seg-2 , .seg-3 , .seg-5").css({backgroundColor:'rgba(255,255,255,0.7)'});
+	CLEARCHAR();
+	$("#SMAINICON").css({backgroundImage:'url(images/aincrad.png)'});
+	$("#SMALFICON").css({backgroundImage:'url(images/alfheim.png)'});
+	$("#SMGGOICON").css({backgroundImage:'url(images/ggo.png)'});
+});
+	$(".seg-1").off("mouseenter mouseleave");
+	
+	$("#SMAINICON").click(function(){
+	$("#CHECKOUT, #CHECKOUTTEXT").css({display:"none"});	
+	$(".seg-1").css({backgroundColor:'rgba(235,166,1,0.9)'});
+	$("#NAVTIT").css({opacity:"0",transform:"scale(1.2)"});
+	$(this).css({backgroundImage:'url(images/aincrad.png)'});		
+	$("#NAVTIT").delay(200).promise().done(function() {
+	$("#NAVTIT").html("LOCA > Aincrad").css({opacity:"1",transform:"scale(1)"});
+	$("#SMINTRO").css({opacity:"1",marginTop:"30px"});
+	$("#BLADE").css({display:"block"});
+	$("#SMMAINLINK").attr("href","Aincrad.html");
+	})
+	$(".seg-5 , .seg-2 , .seg-3 , .seg-4").css({backgroundColor:'rgba(255,255,255,0.7)'});
+	$("#SMALFICON").css({backgroundImage:'url(images/alfheimSM.png)'});
+	$("#SMGGOICON").css({backgroundImage:'url(images/ggoSM.png)'});
+	CLEARCHAR();	
+	
+});
+	$("#SMAINICON").off("mouseenter mouseleave");
+	
+	$("#SMALFICON").click(function(){
+	$("#CHECKOUT, #CHECKOUTTEXT").css({display:"none"});	
+	$(".seg-1").css({backgroundColor:'rgba(235,166,1,0.9)'});
+	$("#NAVTIT").css({opacity:"0",transform:"scale(1.2)"});
+	$(this).css({backgroundImage:'url(images/alfheim.png)'});		
+	$("#NAVTIT").delay(200).promise().done(function() {
+	$("#NAVTIT").html("LOCA > Alfheim").css({opacity:"1",transform:"scale(1)"});
+		$("#SMINTRO").css({opacity:"1",marginTop:"30px"});
+	$("#BLADE").css({display:"block"});
+	$("#SMMAINLINK").attr("href","Alfheim.html");	
+	})
+	$(".seg-5 , .seg-2 , .seg-3 , .seg-4").css({backgroundColor:'rgba(255,255,255,0.7)'});
+	$("#SMAINICON").css({backgroundImage:'url(images/aincradSM.png)'});
+	$("#SMGGOICON").css({backgroundImage:'url(images/ggoSM.png)'});
+	CLEARCHAR();	
+	
+});
+	$("#SMALFICON").off("mouseenter mouseleave");
+	
+	$("#SMGGOICON").click(function(){
+	$("#CHECKOUT, #CHECKOUTTEXT").css({display:"none"});	
+	$(".seg-1").css({backgroundColor:'rgba(235,166,1,0.9)'});
+	$("#NAVTIT").css({opacity:"0",transform:"scale(1.2)"});
+	$(this).css({backgroundImage:'url(images/ggo.png)'});		
+	$("#NAVTIT").delay(200).promise().done(function() {
+	$("#NAVTIT").html("LOCA > Gun Gale").css({opacity:"1",transform:"scale(1)"});
+		$("#SMINTRO").css({opacity:"1",marginTop:"30px"});
+	$("#BLADE").css({display:"block"});
+	$("#SMMAINLINK").attr("href","Gun Gale.html");	
+	})
+	$(".seg-5 , .seg-2 , .seg-3 , .seg-4").css({backgroundColor:'rgba(255,255,255,0.7)'});	
+	$("#SMAINICON").css({backgroundImage:'url(images/aincradSM.png)'});
+	$("#SMALFICON").css({backgroundImage:'url(images/alfheimSM.png)'});
+	CLEARCHAR();	
+	
+});
+	$("#SMGGOICON").off("mouseenter mouseleave");
+	
+	$("#SMMALEICON").click(function(){
+	$("#CHECKOUT, #CHECKOUTTEXT").css({display:"none"});	
+	$(".seg-2").css({backgroundColor:'rgba(235,166,1,0.9)'});
+	$("#NAVTIT").css({opacity:"0",transform:"scale(1.2)"});
+	$(this).css({backgroundImage:'url(images/male.png)'});		
+	$("#NAVTIT").delay(200).promise().done(function() {
+	$("#NAVTIT").html("CHAR > Male").css({opacity:"1",transform:"scale(1)"});
+		$("#SMINTRO").css({opacity:"1",marginTop:"30px"});
+	$("#BLADE").css({display:"block"});
+	$("#SMMAINLINK").attr("href","Male.html");	
+	})
+	$(".seg-5 , .seg-1 , .seg-3 , .seg-4").css({backgroundColor:'rgba(255,255,255,0.7)'});
+	$("#SMFEMALEICON").css({backgroundImage:'url(images/femaleSM.png)'});
+	CLEARLOCA();	
+	
+});
+	$("#SMMALEICON").off("mouseenter mouseleave");
+	
+	$("#SMFEMALEICON").click(function(){
+	$("#CHECKOUT, #CHECKOUTTEXT").css({display:"none"});	
+	$(".seg-2").css({backgroundColor:'rgba(235,166,1,0.9)'});
+	$("#NAVTIT").css({opacity:"0",transform:"scale(1.2)"});
+	$(this).css({backgroundImage:'url(images/female.png)'});		
+	$("#NAVTIT").delay(200).promise().done(function() {
+	$("#NAVTIT").html("CHAR > Female").css({opacity:"1",transform:"scale(1)"});
+		$("#SMINTRO").css({opacity:"1",marginTop:"30px"});
+	$("#BLADE").css({display:"block"});
+	$("#SMMAINLINK").attr("href","Female.html");	
+	})
+	$(".seg-5 , .seg-1 , .seg-3 , .seg-4").css({backgroundColor:'rgba(255,255,255,0.7)'});
+	$("#SMMALEICON").css({backgroundImage:'url(images/maleSM.png)'});
+	CLEARLOCA();
+	
+});
+	$("#SMFEMALEICON").off("mouseenter mouseleave");
+}
+})
+	
+})
+
+	</script>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<div id="SMFRAME">
+  <div id="SMSPLASH">
+  <div id="MENUNAV" tabindex="0"></div>
+  <div id="MENUMID">
+  <div id="DECORMID"></div>
+  <a id="HOMELINK" href="Home.html"><div id="HOMEM" class="MSTYLE">Home</div></a>
+  <div id="CHARG">
+  <div id="CHARV" class="VSTYLE"></div>
+    <a id="CHARLINK" href="Characters.html"><div id="CHARM" class="MSTYLE">Characters</div></a>
+  </div>
+  <div id="SUBCHARM">
+  <a id="MMALELINK" href="Male.html"><div id="MALEM" class="MS2STYLE">Male</div></a>
+	  <a id="MFEMALELINK" href="Female.html"> <div id="FEMALEM" class="MS2STYLE">Female</div></a>
+  </div>
+  <div id="LOCAG">
+  <div id="LOCAV" class="VSTYLE"></div>
+    <a id="LOCATIONLINK" href="Locations.html"><div id="LOCAM" class="MSTYLE">Locations</div></a>
+  </div>
+  <div id="SUBLOCAM">
+  <a id="MAINLINK" href="Aincrad.html"><div id="AINM" class="MSSTYLE">Aincrad</div></a>
+  <a id="MALFLINK" href="Alfheim.html"><div id="ALFM" class="MSSTYLE">Alfheim</div></a>
+  <a id="MGGOLINK" href="Gun Gale.html"><div id="GGOM" class="MSSTYLE">Gun Gale</div></a>
+  </div>
+	  <a id="TERMLINK" href="Terminology.html"><div id="TERMM" class="MSTYLE">Terminology</div></a>
+  </div>
+  <div id="HEAD">
+  <div id="LOGO"></div>
+  <div id="MENULINE"></div>
+  <div id="TIT">SITEMAP</div>
+  <div id="X2"></div>
+  <div id="LOGIN">
+  <div class="form">
+  <div id="graybg"></div>
+  <form>
+  <div id="title">Welcome</div>
+  <div id="label">Username:</div>
+  <div id="label2">Password:</div>
+  <input autofocus type="text" class="input">
+  <input type="password" class="input2">
+  <div id="O">
+  <input type="submit" id="O1">
+  </div>
+  <div id="X"></div>
+  </form>
+  </div>
+  </div>
+  <div id="MENU">
+  
+  <a href="Home.html"><div id="HOME">
+<!--  	<div id="HEFFEX"></div>-->
+  </div></a>
+  <div id="CHARACTERS">
+    <a href="Characters.html" id="LINKGIACHAR"></a>
+<!--<div id="CEFFEX"></div>-->
+  <div id="CSUB">
+  <div id="DECOR"></div>
+  <div id="MALE">Male
+  <a id="MALELINK" href="Male.html"></a>
+  <div id="MALEICON"></div>
+  </div>
+  <div id="FEMALE">Female
+      <a id="FEMALELINK" href="Female.html"></a>
+  <div id="FEMALEICON"></div>
+  </div>
+  </div>
+  </div>
+  <div id="LOCATIONS">
+  <a href="Locations.html" id="LINKGIALOCA"></a>	
+  <div id="LSUB">
+  <div id="DECOR2"></div>
+  <div id="AINCRAD">Aincrad
+    <a href="Aincrad.html" id="AINCRADLINK"></a>
+  <div id="AINICON"></div>
+  </div>
+  <div id="ALFHEIM">Alfheim
+    <a href="Alfheim.html" id="ALFHEIMLINK"></a>
+  <div id="ALFICON"></div>
+  </div>
+  <div id="GGO">Gun Gale
+  <a href="Gun Gale.html" id="GGOLINK"></a>
+  <div id="GGOICON"></div>
+  </div>
+  </div>
+  </div>
+  <div id="TERMINOLOGY"></div>
+    <a id="TERMZLINK" href="Terminology.html"></a>
+  <div id="SMHLINE"></div>
+  <div id="CLINE"></div>
+  <div id="LLINE"></div>
+  <div id="TLINE"></div>
+  </div>
+
+  </div>
+  	
+ 
+  	<div class="CIRCLE">
+  	<div class="SMICON" id="LOCAICON"></div>
+  	<div class="SMICON" id="CHARICON"></div>
+  	<div class="SMICON" id="HOMEICON"></div>
+  	<div class="SMICON" id="TERMICON"></div>
+  	<div class="SMICON" id="SITEMICON"></div>
+  	
+
+<!--		<div class="CIRCLE1"></div>-->
+		<a id ="SMLLINK"><div class="seg seg-1">
+			</div></a>
+		<a id ="SMCLINK"><div class="seg seg-2"></div></a>
+	  <a id ="SMSMLINK"><div class="seg seg-3"></div></a>
+		<a id ="SMTLINK"><div class="seg seg-4">
+			</div></a>
+	  <a id ="SMHLINK"><div class="seg seg-5"></div></a>
+		
+	</div>
+		<div class="CIRCLEIN"></div>	
+			
+  	<div id="SMNAVILINE"></div>
+  		<div id="SMSMCONT">
+  		<div id="SMTIME"></div>
+  		<div id="SMSITEMAPNAME">Sitemap</div>
+  		<a id="SMICONLINK" href="Sitemap.html"><div id="SMSITEMAPICON"></div></a>
+  		</div>
+  	<div id="NAVTIT">WELCOME
+  	
+  	</div>
+  	
+  	
+  	<div id="SMBODYCONT">
+  	<div id="BLADE"></div>
+  	<div id="CHECKOUT"></div>
+  	<div id="CHECKOUTTEXT">Check It Out</div>
+  	<a id="SMMAINLINK"><div id="SMINTRO">CLICK TO EXPLORE</div></a>
+  	<div id="SMLOGO"></div>
+  	<div id="SMLOCALINE"></div>
+  	<div id="SMCHARLINE"></div>
+		<a id ="SMLAINLINK"><div class="SMWICON" id="SMAINICON"></div></a>
+		<a id ="SMLALFLINK"><div class="SMWICON" id="SMALFICON"></div></a>
+		<a id ="SMLGGOLINK"><div class="SMWICON" id="SMGGOICON"></div></a>
+  	
+		<a id ="SMCMLINK"><div class="SMWICON" id="SMMALEICON"></div></a>
+		<a id ="SMCFLINK"><div class="SMWICON" id="SMFEMALEICON"></div></a>
+  	
+  	<div class="SMTITLE" id="LOCATITLE">LOCATIONS</div>
+  	<div class="SMNAME" id="AINNAME">Aincrad</div>
+  	<div class="SMNAME" id="ALFNAME">Alfheim</div>
+  	<div class="SMNAME" id="GGONAME">Gun Gale</div>
+  	<div class="SMNAME2" id="MALENAME">Male</div>
+  	<div class="SMNAME2" id="FEMALENAME">Female</div>
+  	</div>
+	</div>
+<div id="SMFOOTER">Copy right © 2018 S.A.O Universe. All rights reserved.</div>  
+
+  </div>
+
+
+
+</body>
+</html>

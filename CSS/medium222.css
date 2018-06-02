@@ -1,0 +1,275 @@
+@charset "utf-8";
+/* CSS Document */
+
+#SMSMCONT {
+	top:35px;
+	position: relative;
+	width:480px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#CHECKOUT {
+	top:-500px;	
+	animation: BIENAO2 1.2s infinite ease-in-out;
+	opacity:1;
+}
+#CHECKOUTTEXT {
+	top:-550px;
+	animation: BIENAO3 1.2s forwards ease-in-out;
+}
+@keyframes BIENAO2 {
+	0%{opacity:0;top:-520px}
+	50%{opacity:0.7;}
+	100%{opacity:1;}
+}
+@keyframes BIENAO3 {
+	0%{opacity:0;top:-540px}
+	50%{opacity:0.5;}
+	100%{opacity:1;}
+}
+#SMSITEMAPNAME {
+	opacity:0.7;
+	top:50px;
+}
+#SMNAVILINE {
+	width:280px;
+}
+#SMSITEMAPICON {
+	right:50px;
+}
+#SMSITEMAPNAME {
+	right:57px;
+}
+#SMTIME {
+	font-size:25px;
+	left:20px;
+}
+
+#NAVTIT {
+	font-size:30px;
+}
+
+/*CHARACTERS ----------------------------------------------------------------------------------------------------------------------------------------------*/
+#CHARTHUMBG {
+	width:329px;	
+}
+
+.PAGE {
+	position: absolute;
+	font-family: SAO;
+	font-size:20px;
+	color:rgba(255,255,255,0.7);	
+	top:0px;
+	width:10px;
+	text-align: center;
+	
+}
+#SEP3 {
+	pointer-events: none;
+	font-family: none;
+}
+#PAGE4 {
+	cursor: pointer;
+}
+#CHARNAVILINE {
+	width:280px;
+}
+#CHARSITEMAPICON {
+	right:50px;
+}
+
+#CHARSITEMAPNAME {
+	right:57px;
+}
+#CHARTIME {
+	font-size:23px;
+	left:20px;
+}
+.CHARAVA {
+	display: none;
+}
+#CHARCONTENT {
+	position: relative;
+	margin:0px auto 0px auto;
+	width:480px;
+	height:627px;
+}
+.ATTRCONT, .CHARATK, .CHARDEF, .CHARCRIT {
+	left:120px;
+}
+.WEAPON {
+	left:120px;
+}
+.WEAPONNAME {
+	left:190px;
+}
+.CHARHP,.CHARMP {
+	left:135px;
+}
+.CHARATTRstat {
+	left:275px;
+	
+}
+#CHARTHUMBG {
+	margin-top:-70px;
+}
+#CHARCONTENT {
+	margin-top:40px;
+}
+
+#CHARNAVILINE {
+	margin-top:50px;
+}
+
+.CHARGNAME {
+	top:250px;
+	left:0px;
+	transform: perspective( 0px ) rotateY( 0deg );
+	
+}
+.GENDER {
+	top:90px;
+	left:315px;
+}
+.LEVEL {
+	top:13px;
+	left:315px;	
+}
+#hr1 {
+	display: block;
+	margin-left:120px;
+	width:100%;
+	margin-top:150px;
+}
+.CHARZNAME {
+	top:70px;
+	left:120px;
+}
+.CHAREPITHET {
+	top:163.5px;
+	left:120px;
+}
+.CHARINTRO {
+	top:460px;
+	left:120px;
+}
+.effex , .effex2 {
+	display:none;
+}
+/*#LCOL1 {
+	background: rgba(78,173,201,1.00);	
+}
+#LCOL2 {
+	background: rgba(235,166,1,0.90);
+}
+#LCOL3 {
+	background:rgba(99,17,201,1.00);
+}*/
+#LOCAFRAME {
+
+	height: 1800px;
+
+}
+#TESTT {
+	float:left;
+	margin-right:50px;
+}
+#li2{
+	float:left;
+	margin-right:50px;
+}
+#li3 {
+	float:left;
+	margin-right:50px;
+}
+#li4 {
+	float:left;
+	margin-right:50px;
+}
+#li5 {
+	float:left;
+	margin-right:50px;
+}
+
+#NAVIPANEL,#SHOWPANEL {
+	transform:rotateY(0deg);
+}
+#INTROPANEL {
+	transform:translateZ(0px);
+}
+.AREAbody {
+	margin-left:50px;
+	margin-top:60px;
+}
+#LCOL1,#NAVIPANEL {
+	height:250px;
+}
+#LCOL3,#SHOWPANEL {
+	height:400px;
+}
+.TITLESTYLE1 {
+	margin-top:50px;
+}
+.TITLESTYLE2 {
+	margin-top:0px;
+}
+.TITLESTYLE3 {
+	margin-top:-50px;
+}
+.GACONTAINER {
+	margin-top:70px;
+	width:300px;
+}
+.GACONTAINER2 {
+	width:300px;
+}
+#LARGETHUMB,#SMALLTHUMB1,#SMALLTHUMB2 {
+	transform:rotateY(0deg);
+	left:0px;
+}
+.EVENTBODY {
+	margin-right:35px;
+	margin-left:35px;
+}
+#LPAGINATION {
+	
+	margin:40px auto 0px auto;
+}
+#LOCATHUMBG {	
+	background:none;
+}
+#LOCAZNAVILINE {
+	margin-top:100px;
+	margin-left:auto;
+	margin-right:auto;
+	width:300px;
+	height:14px;
+}
+
+.LPANEL {
+	
+	height:300px;
+	width:70%;
+	box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+	margin-bottom:50px;
+
+}
+#AINPANEL {
+	background-position: 0px;
+}
+#ALFPANEL {
+	background-position: -200px;
+	background-size: 180% auto;
+
+}
+#GGOPANEL {
+	background-position: -200px;
+	background-size: 180% auto;
+
+}
+#LOCATHUMBG1 {
+	background: none;
+}
+#LOCAFRAME1 {
+	height:1500px;
+}

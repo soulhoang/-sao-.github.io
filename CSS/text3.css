@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* CSS Document */
+
+.name {
+	top:340px;
+	left:50px;
+	font-size:70px;
+}
+.nick {
+	display: none;
+}
+.EXBUT {
+	top:460px;
+	left:50px;
+
+}
+#sinonn {
+	display: none;
+}
+#sinon {
+	top:340px;
+	font-size:70px;
+	left:50px;
+}
+
+#EXBUT2 {
+	top:460px;
+	left:50px;
+
+}
+#SMNAVILINE {
+	position: relative;
+	margin-left:auto;
+	margin-right: auto;
+	top:120px;
+	width:340px;
+	height:14px;
+	background-image: url(../images/NAVILINE_53.png);
+	overflow: hidden;
+	background-position: center center;
+}
+#SMSMCONT {
+	position: relative;
+	top:105px;
+	width:520px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#CHARNAVILINE {
+	position: relative;
+	margin-left:auto;
+	margin-right: auto;
+	width:340px;
+	height:14px;
+	background-image: url(../images/NAVILINE_53.png);
+	overflow: hidden;
+	background-position: center center;	
+}
+#CHARCONT {
+	position: relative;
+	top:-15px;
+	width:520px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#LOCATHUMBG2 {
+	position: relative;
+	margin:0px auto 0px auto;
+	width:434px;
+	height:643px;
+	background-position: center center;
+	background-image:url(../images/TERMINOLOGY/BOOKBGMID.png);
+	background-size:cover;
+}
+#TCOL2Z{
+	display:none;
+}
+#so5 {
+	right:165px;
+	top:70px;
+	background-image: url(../images/TERMINOLOGY/images/guild_05.png);
+}
+#so1 {
+	left:165px;
+	top:70px;	
+	background-image: url(../images/TERMINOLOGY/images/beater_08.png);
+}
+#LOCAZNAVILINE3 {
+	width:400px;
+}
+#CHARCONT2 {
+	width:580px;
+}

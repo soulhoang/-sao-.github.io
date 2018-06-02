@@ -1,0 +1,364 @@
+@charset "utf-8";
+/* CSS Document */
+#MENU {
+	display: none;
+}
+#MENULINE {
+	
+	margin:86px 90px 0px 90px;
+	max-width:1101px;
+	height:23px;
+	background-image: url(../images/MENULINE_05.png);
+	overflow: hidden;
+	background-position: center center;
+}
+/*#FRAME {
+	height: 1495px;
+	width: 768px;
+	margin: 0px auto 0px auto;
+	background: #000000;
+}*/
+#FRAME {
+	height: 1600px;
+	width: 480px;
+	margin: 0px auto 0px auto;
+	background: #000000;
+}
+/*#HEAD {
+	position: absolute;
+	height: 109px;
+	width: 768px;
+	left: 0px;
+	top: 0px;
+}*/
+#HEAD {
+	position: absolute;
+	height: 109px;
+	width:100%;
+	left: 0px;
+	top: 0px;
+}
+/*#SPLASH {
+	position: relative;
+	height: 600px;
+	width: 768px;
+	left: 0px;
+	top: 0px;
+	overflow: hidden;
+}*/
+#SPLASH {
+	position: relative;
+	height: 600px;
+	width: 480px;
+	left: 0px;
+	top: 0px;
+	overflow: hidden;
+}
+/*#MENULINE {
+	position: absolute;
+	top:55px;
+	left:120px;
+	width:240px;
+	height:4px;
+	background-image: url(../images/MENULINE_small_21.png);
+}
+#FRAME {
+	height: 1495px;
+	width: 480px;
+	margin: 0px auto 0px auto;
+	background: #000000;
+}*/
+/*#HEAD {
+	position: absolute;
+	height: 109px;
+	width: 480px;
+	left: 0px;
+	top: 0px;
+}*/
+#TIT {
+	margin: -73px auto 0px auto;
+	width:80px;
+	height:40px;
+	text-align: center;
+	letter-spacing: 0.2em;
+	color:rgba(255,255,255,0.6);
+	display: block;
+	font-family: SAO;
+	font-size:30px;
+}
+	
+	
+/*#SPLASH {
+	position: relative;
+	height: 600px;
+	width: 480px;
+	left: 0px;
+	top: 0px;
+	overflow: hidden;
+}*/
+#SPLASHSCREEN {
+	position: relative;
+	width:1280px;
+	left:50%;
+	transform: translateX(-50%);
+}
+
+#MENUNAV {
+	width:55px;
+	height:55px;
+	position: absolute;
+	right:20px;
+	top:104px;
+	cursor: pointer;
+	outline:none;
+}
+#MENUNAV:hover {
+	background-size:cover;
+}
+
+#MENUMID {
+	width:332px;
+	height:384px;
+	position: absolute;
+	right:20px;
+	top:174px;
+	margin-right:-352px;
+}
+#DECORMID {
+	width:4px;
+	height:281px;
+	position: absolute;
+	right:0px;
+	top:0px;
+	background: rgba(255,255,255,0.7);
+}
+.MSTYLE {
+	height:66px;
+	position: relative;
+	background: rgba(255,255,255,0.7);
+	line-height: 66px;
+	font-family:SAO;
+	font-size: 31px;
+	color: rgba(0,0,0,0.5);
+	letter-spacing: 0.1em;
+	transition: all 0.2s ease-in-out;
+	text-align: center;
+	cursor: pointer;
+}
+#CHARG {
+	height:66px;
+	position: relative;
+	width:208px;
+	top:6px;
+	left:112px;
+}
+#LOCAG {
+	height:66px;
+	position: relative;
+	width:188px;
+	left:132px;
+	top:12px;
+}
+.VSTYLE {
+	height:15px;
+	width:26px;
+	position: relative;
+	background-image: url(../images/SHOWICON_82.png);
+	transition: all 0.2s ease-in-out;
+	cursor: pointer;
+	top:25px;
+}
+/*.MSTYLE:hover {
+	background: rgba(235,166,1,0.8);
+	color: rgba(255,255,255,0.8);
+}*/
+.MSSTYLE {
+	height:45px;
+	width:102px;
+	top:6px;
+	position: absolute;
+	background: rgba(76,76,76,0.7);
+	line-height: 45px;
+	font-family:SAO;
+	font-size: 25px;
+	color: rgba(255,255,255,0.6);
+	letter-spacing: 0.1em;
+	transition: all 0.2s ease-in-out;
+	text-align: center;
+	cursor: pointer;
+}
+.MS2STYLE {
+	height:45px;
+	width:90px;
+	top:6px;
+	position: absolute;
+	background: rgba(76,76,76,0.7);
+	line-height: 45px;
+	font-family:SAO;
+	font-size: 25px;
+	color: rgba(255,255,255,0.6);
+	letter-spacing: 0.1em;
+	transition: all 0.2s ease-in-out;
+	text-align: center;
+	cursor: pointer;
+}
+#SUBLOCAM {
+	width:320px;
+	height:51px;
+	position: relative;
+	top:12px;
+	left:0px;
+	cursor: pointer;
+}
+#SUBCHARM {
+	width:187px;
+	height:51px;
+	position: relative;
+	top:6px;
+	left:133px;
+	cursor: pointer;
+}
+#HOMEM {
+	width:86px;
+	left:234px;
+	top:0px;
+}
+#CHARM {
+	width:165px;
+	right:0px;
+	position: absolute;
+	top:0px;
+}
+#LOCAM {
+	width:145px;
+	position: absolute;
+	right:0px;
+	top:0px;
+}
+#TERMM {
+	width:175px;
+	left:145px;
+	top:18px;
+}
+#AINM {
+	left:0px;
+}
+#ALFM {
+	left:109px;
+}
+#GGOM {
+	right:0px;
+}
+#MALEM {
+	left:0px;
+}
+#FEMALEM {
+	right:0px;
+}
+#CHARV {
+	left:0px;
+	transition: all 0.2s ease-in-out;
+}
+#LOCAV {
+	left:0px;
+	transition: all 0.2s ease-in-out;
+}
+#SMNAVILINE {
+	position: absolute;
+	top:0px;
+	width:340px;
+	height:14px;
+	background-image: url(../images/NAVILINE_53.png);
+	background-position: center center;
+	
+	
+}
+#THUMBG {
+	width:400px;
+	height:200px;
+	position: absolute;
+	left:-5px;
+}
+#NAVITIT {
+	position: relative;
+	margin-left: 0px;
+}
+#SMSMCONT {
+	top:35px;
+	position: relative;
+	width:480px;
+	margin-left:0px;
+}
+#SMFRAME {
+	position: relative;
+	height: 1000px;
+	width:480px;
+	
+}
+
+/*CHARACTERS ----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+#CHARTIT {
+	margin: -73px 63% 0px 37%;
+	width:180px;
+	height:40px;
+	text-align: center;
+	letter-spacing: 0.2em;
+	color:rgba(255,255,255,0.6);
+	display: block;
+	font-family: SAO;
+	font-size:30px;
+}
+#CHARNAVILINE {
+	position: absolute;
+	top:0px;
+	width:280px;
+	height:14px;
+	background-image: url(../images/NAVILINE_53.png);
+	overflow: hidden;
+	background-position: center center;	
+}
+#CHARCONT {
+	position: relative;
+	top:-15px;
+	width:480px;
+	margin-left:0px;
+}
+
+#CHARSITEMAPICON {
+	right:50px;
+}
+#CHARSITEMAPNAME {
+	right:57px;
+}
+#CHARTIME {
+	font-size:25px;
+	left:20px;
+}
+#CHARFRAME {
+	position: relative;
+	height: 1400px;
+	width: 480px;
+	margin: 0px auto 0px auto;
+	background-image: url(../images/CHARACTERs/CHARBG.png);
+	background-position: center center;
+	overflow: hidden;
+}
+#LOCAFRAME {
+	position: relative;
+	height: 2000px;
+	width: 480px;
+	margin: 0px auto 0px auto;
+}
+#LOCAFRAME1 {
+	position: relative;
+	height: 2000px;
+	width: 480px;
+	margin: 0px auto 0px auto;
+}
+#LOCAFRAME2 {
+	position: relative;
+	height: 1200px;
+	width: 480px;
+	margin: 0px auto 0px auto;
+}

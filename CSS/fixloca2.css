@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+
+#SHOWPANEL {
+	transform:rotateY(-12deg);	
+	width:220px;
+	margin-left:-50px;
+}
+#NAVIPANEL {
+	width:220px;
+}

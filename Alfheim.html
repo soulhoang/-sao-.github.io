@@ -1,0 +1,1065 @@
+<!doctype html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alfheim | S.A.O Universe</title>
+<link rel="stylesheet" href="CSS/main.css" />
+<link rel="stylesheet" media="(min-width: 0px) and (max-width: 480px)" href="CSS/small.css" />
+<link rel="stylesheet" media="(min-width: 1001px) and (max-width: 3000px)" href="CSS/large.css" />
+<link rel="stylesheet" media="(min-width: 1101px) and (max-width: 3000px)" href="CSS/fixlocalarge.css" />
+<link rel="stylesheet" media="(min-width: 901px) and (max-width: 1100px)" href="CSS/text.css" />
+<link rel="stylesheet" media="(min-width: 992px) and (max-width: 3000px)" href="CSS/fixloca2.css" />
+<link rel="stylesheet" media="(min-width: 0px) and (max-width: 991px)" href="CSS/fixloca.css" />
+<link rel="stylesheet" media="(min-width: 800px) and (max-width: 900px)" href="CSS/text2.css" />
+<link rel="stylesheet" media="(min-width: 0px) and (max-width: 799px)" href="CSS/text3.css" />
+<link rel="stylesheet" media="(min-width: 0px) and (max-width: 500px)" href="CSS/sinon.css" />
+<link rel="stylesheet" media="(min-width: 769px) and (max-width: 1000px)" href="CSS/medium2.css" />
+<link rel="stylesheet" media="(min-width: 515px) and (max-width: 768px)" href="CSS/medium.css" />
+<link rel="stylesheet" media="(min-width: 601px) and (max-width: 616px)" href="CSS/charfix.css"/>
+<link rel="stylesheet" media="(min-width: 0px) and (max-width: 600px)" href="CSS/medium222.css"/>
+<link rel="stylesheet" media="(min-width: 0px) and (max-width: 514px)" href="CSS/medium22.css"/>
+
+<!-- <link href="CSS/bootstrap.css" rel="stylesheet"> -->
+<link href="css/bootstrap-3.3.7.css" rel="stylesheet" type="text/css">
+<style>
+	h3 {
+	font-family: SAO;
+	color:white;
+	font-size:50px;
+	letter-spacing: 0.1em;
+	}
+	</style>
+<script src="JS/jquery-1.11.1.min.js"></script>
+<script src="JS/jquery.easing.min.js"></script>
+<script src="js/bootstrap-3.3.7.js"></script>
+<script>
+	  $(document).ready(function() {
+		    $("#ALFHEIM").css({background:"rgba(33,123,177,1)",color:"rgba(255,255,255,0.7)"});
+		  $("#ALFICON").css("background-image", "url('images/alfheim_active.png')");
+		
+		  
+		  $("#MALEGENDER").hover(function(){
+    $(this).css({backgroundImage:'url(images/CHARACTERs/images/MALEGENDER_iconhover_05.png)'});
+},function(){
+     $(this).css({backgroundImage:'url(images/CHARACTERs/images/MALEGENDER_icon_05.png)'});
+});
+		  $("#FEMALEGENDER").hover(function(){
+    $(this).css({backgroundImage:'url(images/CHARACTERs/images/FEMALEGENDER_iconhover_07.png)'});
+},function(){
+     $(this).css({backgroundImage:'url(images/CHARACTERs/images/FEMALEGENDER_icon_07.png)'});
+});
+		  $("#ALLGENDER").hover(function(){
+    $(this).css({backgroundImage:'url(images/CHARACTERs/images/ALLGENDER_iconhover_11.png)'});
+},function(){
+     $(this).css({backgroundImage:'url(images/CHARACTERs/images/ALLGENDER_icon_05.png)'});
+});
+		  
+		  		  function updateClock() { document.getElementById("CHARTIME").innerHTML = new Date().toLocaleTimeString('en-US', { hour12: false, 
+                                             hour: "numeric", 
+                                             minute: "numeric"}) }
+		  updateClock();
+		  setInterval(updateClock, 1000);
+/*		  			  $("#LOGIN").hover(function(){
+					$(this).css({backgroundImage:'url(images/LOG-IN-ACTIVE_25.png)'});
+				},function(){
+					 $(this).css({backgroundImage:'url(images/LOG-IN_05.png)'});
+				});*/
+		   $("#X2").hide();
+		  var ABC = 1;
+		  /*$("#LOGIN").hover(function() {
+			  $( this ).css({backgroundImage:'url(images/LOG-IN-ACTIVE_25.png)'});
+			  
+		  }, function() {
+			  $( this ).css({backgroundImage:'url(images/LOG-IN_05.png)'});
+		  }
+		)*/
+		  
+		  $("#LOGIN").click(function() {
+			  $( this ).css({backgroundImage:'url(images/LOGIN_active.png)'});
+			  
+			/*  $("#LOGIN").hover(function() {
+			  $( this ).css({backgroundImage:'url(images/LOGIN_active.png)'});
+			  
+		  }, function() {
+			  $( this ).css({backgroundImage:'url(images/LOGIN_active.png)'});
+		  }
+		)*/
+			  
+			  
+			  $(".form").css({transform:"scaleY(1)"});
+			  $("#X2").delay(200).show(0);
+			  $("#X").delay(200).hide(0);
+/*			    $("#LOGIN").hover(function(){
+					$(this).css({backgroundImage:'url(images/LOGIN_active.png)'});
+				},function(){
+					 $(this).css({backgroundImage:'url(images/LOGIN_active.png)'});
+				});*/
+		  })		 
+			  $(".input" ).focus(); 
+
+		  $("#X2").click(function() {
+			  $("#X").show(0);
+			  $("#LOGIN").css({backgroundImage:'url(images/LOG-IN_05.png)'});
+			  $(".form").css({transform:"scaleY(0)"});
+			  $(this).hide();
+			  $("form").find("input[type=text], textarea").val("");
+			  $("form").find("input[type=password], textarea").val("");
+/*			  $("#LOGIN").hover(function(){
+					$(this).css({backgroundImage:'url(images/LOG-IN-ACTIVE_25.png)'});
+				},function(){
+					 $(this).css({backgroundImage:'url(images/LOG-IN_05.png)'});
+				});*/
+			  
+			  
+		  })
+
+		  $("#SUBCHARM").hide();
+		  $("#SUBLOCAM").hide();
+		   var PRO = 1;
+		   var VIP = 1;
+		  $("#CHARV").click(function() {
+		 
+			  if (PRO == 1) {
+				  $("#DECORMID").animate({height: '+=51'}, 500);
+				  $("#SUBCHARM").slideDown(500);
+				  $("#CHARM").css({backgroundColor:'rgba(235,166,1,0.8)',color: 'rgba(255,255,255,0.8)'});
+			  	  $("#CHARV").css({transform:"rotate(180deg)"});
+
+			  PRO = 0;
+		  }
+			  else {
+				  $("#DECORMID").animate({height: '-=51'}, 500);
+				  $("#SUBCHARM").slideUp(500);
+				  $("#CHARM").css({backgroundColor:'rgba(255,255,255,0.7)',color: 'rgba(0,0,0,0.5)'});
+			  	  $("#CHARV").css({transform:"rotate(-360deg)"});
+				  
+			  PRO = 1;
+		  }
+			  
+		  })
+		  
+		  $("#LOCAV").click(function() {
+		 
+			  if (VIP == 1) {
+				  $("#DECORMID").stop(true);
+				  $("#SUBLOCAM").stop(true);
+				  $("#DECORMID").animate({height: '+=51'}, 500);
+				  $("#SUBLOCAM").slideDown(500);
+				  $("#LOCAM").css({backgroundColor:'rgba(235,166,1,0.8)',color: 'rgba(255,255,255,0.8)'});
+			  	  $("#LOCAV").css({transform:"rotate(180deg)"});
+
+			  VIP = 0;
+		  }
+			  else {
+				  $("#DECORMID").stop(true);
+				  $("#SUBLOCAM").stop(true);
+				  $("#DECORMID").animate({height: '-=51'}, 500);
+				  $("#SUBLOCAM").slideUp(500);
+				  $("#LOCAM").css({backgroundColor:'rgba(255,255,255,0.7)',color: 'rgba(0,0,0,0.5)'});
+			  	  $("#LOCAV").css({transform:"rotate(-360deg)"});
+				  
+			  VIP = 1;
+		  }
+			  
+		  })
+				  
+		  var FLAG = 1;
+		  $("#MENUNAV").css({backgroundImage:'url(images/MENU_icon_24.png)'});
+//		  $("#MENUNAV").focus(
+//				  function() {
+//					$( this ).css({backgroundImage:'url(images/MENUICON_active.png)'});
+//				  }
+//				);
+		  $("#MENUNAV").click(function() {
+			  if (FLAG == 1) {
+				  $("#MENUMID").stop(true);
+				  $("#MENUMID").animate({marginRight:0});
+				  $("#MENUNAV").css({backgroundImage:'url(images/CLOSEMENU_icon_24.png)'});
+				  FLAG = 0;
+			  }
+			  else {
+//		  $("#MENUNAV").focus(
+//				  function() {
+//					$( this ).css({backgroundImage:'url(images/CLOSEICON_active.png)'});
+//				  }
+//				);
+				  
+				  $("#DECORMID").css({height: '281'});
+				  $("#SUBCHARM").hide();
+				  $("#SUBLOCAM").hide();
+				  $("#CHARM").css({backgroundColor:'rgba(255,255,255,0.7)',color: 'rgba(0,0,0,0.5)'});
+				  $("#LOCAM").css({backgroundColor:'rgba(255,255,255,0.7)',color: 'rgba(0,0,0,0.5)'});
+				  $("#LOCAV").css({transform:"none"});
+				  $("#CHARV").css({transform:"none"});
+				  $("#MENUMID").stop(true);
+				  $("#MENUMID").animate({marginRight:-352});
+				  $("#MENUNAV").css({backgroundImage:'url(images/MENU_icon_24.png)'});
+//				  $("#MENUNAV").focus(
+//				  function() {
+//					$( this ).css({backgroundImage:'url(images/MENUICON_active.png)'});
+//				  }
+//				);
+				  FLAG = 1;
+				  VIP = 1;
+				  PRO = 1;
+			  }
+			  
+			  
+		  })
+		  
+	 
+	function CLEARLOCA() {
+	$("#SMAINICON").css({backgroundImage:'url(images/aincradSM.png)'});
+	$("#SMALFICON").css({backgroundImage:'url(images/alfheimSM.png)'});
+	$("#SMGGOICON").css({backgroundImage:'url(images/ggoSM.png)'});
+	}
+	
+	function CLEARCHAR() {
+	$("#SMMALEICON").css({backgroundImage:'url(images/maleSM.png)'});
+	$("#SMFEMALEICON").css({backgroundImage:'url(images/femaleSM.png)'});
+	}
+	
+	function CLEARMENUMID() {
+	$("#DECORMID").css({height: '281'});
+	$("#SUBCHARM").hide();
+	$("#SUBLOCAM").hide();
+	$("#CHARM").css({backgroundColor:'rgba(255,255,255,0.7)',color: 'rgba(0,0,0,0.5)'});
+	$("#LOCAM").css({backgroundColor:'rgba(255,255,255,0.7)',color: 'rgba(0,0,0,0.5)'});
+	$("#LOCAV").css({transform:"none"});
+	$("#CHARV").css({transform:"none"});		  
+	$("#MENUMID").animate({marginRight:-352});
+	$("#MENUNAV").css({backgroundImage:'url(images/MENU_icon_24.png)'});
+	FLAG = 1;
+	VIP = 1;
+	PRO = 1;
+	}
+		  
+	function CLEARLOGIN() {
+	$("#X").show(0);
+	$("#LOGIN").css({backgroundImage:'url(images/LOG-IN_05.png)'});
+	$(".form").css({transform:"scaleY(0)"});
+	$("#X2").hide();
+	$("form").find("input[type=text], textarea").val("");
+	$("form").find("input[type=password], textarea").val("");
+	}
+
+	
+$(window).bind("load resize",function() {
+	
+	
+//	$("#PAGE1").trigger("click");
+//	$("#thumb1c").trigger("click");
+	
+	CLEARMENUMID();
+	CLEARLOGIN();
+		$("#CHARSITEMAPICON").hover(function() {
+		$("#CHARSITEMAPNAME").css({opacity:0.7,top:"50px"});
+	}, function(){
+		$("#CHARSITEMAPNAME").css({opacity:0,top:"20px"});
+	})
+		$("#CHARSITEMAPICON").hover(function(){
+    $(this).css("background-image", "url('images/sitemapicon_hover.png')");
+},function(){
+     $(this).css("background-image", "url('images/sitemapicon_46.png')"); 
+});
+
+
+	
+
+	
+	
+})
+
+
+	
+})
+
+	</script>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<div id="LOCAFRAME">
+  <div id="LOCASPLASH">
+  <div id="MENUNAV" tabindex="0"></div>
+  <div id="MENUMID">
+  <div id="DECORMID"></div>
+  <a id="HOMELINK" href="Home.html"><div id="HOMEM" class="MSTYLE">Home</div></a>
+  <div id="CHARG">
+  <div id="CHARV" class="VSTYLE"></div>
+	  <a id="CHARLINK" href="Characters.html"><div id="CHARM" class="MSTYLE">Characters</div></a>
+  </div>
+  <div id="SUBCHARM">
+	  <a id="MMALELINK" href="Male.html"><div id="MALEM" class="MS2STYLE">Male</div></a>
+	  <a id="MFEMALELINK" href="Female.html"><div id="FEMALEM" class="MS2STYLE">Female</div></a>
+  </div>
+  <div id="LOCAG">
+  <div id="LOCAV" class="VSTYLE"></div>
+    <a id="LOCATIONLINK" href="Locations.html"><div id="LOCAM" class="MSTYLE">Locations</div></a>
+  </div>
+  <div id="SUBLOCAM">
+  <a id="MAINLINK" href="Aincrad.html"><div id="AINM" class="MSSTYLE">Aincrad</div></a>
+  <a id="MALFLINK" href="Alfheim.html"><div id="ALFM" class="MSSTYLE">Alfheim</div></a>
+  <a id="MGGOLINK" href="Gun Gale.html"><div id="GGOM" class="MSSTYLE">Gun Gale</div></a>
+  </div>
+	  <a id="TERMLINK" href="Terminology.html"><div id="TERMM" class="MSTYLE">Terminology</div></a>
+  </div>
+  <div id="HEAD">
+  <div id="LOGO"></div>
+  <div id="MENULINE"></div>
+  <div id="CHARTIT">ALFHEIM</div>
+  <div id="X2"></div>
+  <div id="LOGIN">
+  <div class="form">
+  <div id="graybg"></div>
+  <form>
+  <div id="title">Welcome</div>
+  <div id="label">Username:</div>
+  <div id="label2">Password:</div>
+  <input autofocus type="text" class="input">
+  <input type="password" class="input2">
+  <div id="O">
+  <input type="submit" id="O1">
+  </div>
+  <div id="X"></div>
+  </form>
+  </div>
+  </div>
+  <div id="MENU">
+  
+  <div id="HOME">
+  <a id="HHOMELINK" href="Home.html"></a>
+<!--  	<div id="HEFFEX"></div>-->
+  </div>
+  <div id="CHARACTERS">
+  <a href="Characters.html" id="LINKGIACHAR"></a>
+<!--<div id="CEFFEX"></div>-->
+  <div id="CSUB">
+  <div id="DECOR"></div>
+  <div id="MALE">Male
+    <a id="MALELINK" href="Male.html"></a>
+  <div id="MALEICON"></div>
+  </div>
+  <div id="FEMALE">Female
+    <a id="FEMALELINK" href="Female.html"></a>
+  <div id="FEMALEICON"></div>
+  </div>
+  </div>
+  </div>
+  <div id="LOCATIONS">
+  <a href="Locations.html" id="LINKGIALOCA"></a>	
+  <div id="LSUB">
+  <div id="DECOR2"></div>
+  <div id="AINCRAD">Aincrad
+    <a href="Aincrad.html" id="AINCRADLINK"></a>
+  <div id="AINICON"></div>
+  </div>
+  <div id="ALFHEIM">Alfheim
+    <a href="Alfheim.html" id="ALFHEIMLINK"></a>
+  <div id="ALFICON"></div>
+  </div>
+  <div id="GGO">Gun Gale
+     <a href="Gun Gale.html" id="GGOLINK"></a>
+  <div id="GGOICON"></div>
+  </div>
+  </div>
+  </div>
+  
+  <div id="TERMINOLOGY"></div>
+    <a id="TERMZLINK" href="Terminology.html"></a>
+  <div id="HLINE"></div>
+  <div id="CLINE"></div>
+  <div id="LLINEACTIVE"></div>
+  <div id="TLINE"></div>
+  </div>
+
+  </div>
+  	
+</div>
+
+<div id="LOCABODY">
+	
+	
+	<div id="LOCATHUMBG">	
+		
+	<div class="container-fluid LOCASCREEN">
+  	<div class="row">
+    <div class="col-md-2 col-sm-3 col-xs-12" id="LCOL1">
+    	
+    <div class="PANEL" id="NAVIPANEL">
+    	
+    	<div class="TITLESTYLE TITLESTYLE1" id="AREA">Areas</div>	
+   
+    	<ul class="AREAbody">
+    		<li id="TESTT" class="liz">Ancient Forest</li>
+    		
+    		<li class="liz" id="li2">Swilvane</li>
+    		
+    		<li class="liz" id="li3">Butterfly Valley</li>
+    		<li class="liz" id="li4">World Tree</li>
+<!--	<span class="SUPER">th</span>	-->		
+    	</ul>
+    	
+    </div>	
+    </div>
+    <div class="col-md-8 col-sm-6 col-xs-12" id="LCOL2">
+    	
+    <div class="PANEL" id="INTROPANEL">
+    	<div class="TITLESTYLE TITLESTYLE2" id="CHRONO">Gallery</div>	
+   <div class="GACONTAINER">
+   	<div class="GACONTAINER2">
+    	<div class="GTHUMB" id="LARGETHUMB">
+    		<div class="BLACK" id="LARGEB">Aincrad Arc</div>
+    	</div>
+    	<div class="GTHUMB" id="SMALLTHUMB1">
+    		<div class="BLACK" id="SMALL1B">Murder in Safe Zone</div>
+    	</div>
+    	<div class="GTHUMB" id="SMALLTHUMB2">
+    		<div class="BLACK" id="SMALL2B">Morning Dew Girl</div>
+    	</div>
+    	</div>
+    	</div>
+    </div>
+    		
+    </div>
+    <div class="col-md-2 col-sm-3 col-xs-12" id ="LCOL3">
+    	
+     <div class="PANEL" id="SHOWPANEL">
+     	<div class="TITLESTYLE TITLESTYLE3" id="GALLERY">Events</div>	
+  		<div class="EVENTTIT">Aincrad Arc</div>
+  		<div class="PLACE">Floor 1</div>
+  		<div class="TIME">November 6, 2022</div>
+  		<hr id="hrz">
+  		<div class="EVENTBODY">Just after 5:30 P.M on November 6, 2022, Kayaba Akihiko force teleported all players, including Kirito and his new friend Klein, back to the Starting Town and announced that SAO had become a mortal game</div>
+     </div>		
+    </div>
+  	</div>
+	</div>
+		
+		
+	</div>
+	<div id="LOCANAVILINE"></div>
+	<div id="LOCANAVILINE2"></div>
+		<div id="LOCANAVILINE3"></div>
+	<div id="LPAGINATION">
+			<div class="LPAGE" id="LPAGE1">1</div>
+			<div class="LPAGE" id="LSEP">|</div>
+			<div class="LPAGE" id="LPAGE2">2</div>
+			</div>
+
+	<div id="LOCAZNAVILINE"></div>	
+  		<div id="CHARCONT">
+  		<div id="CHARTIME"></div>
+  		<div id="CHARSITEMAPNAME">Sitemap</div>
+  		<a id="SMICONLINK" href="Sitemap.html"><div id="CHARSITEMAPICON"></div></a>
+  		</div>
+  		
+  	<div id="CHARNAVIZ">
+		<a id="MMALELINK2" href="Gun Gale.html"><div class="LOCANAVIICON" id="LGGO"></div></a>
+		<a id="MFEMALELINK2" href="Aincrad.html"><div class="LOCANAVIICON" id="LAINCRAD"></div></a>
+  		<a id="CHARLINK2" href="Alfheim.html"><div class="LOCANAVIICON" id="LALFHEIMACTIVE"></div></a>
+  	</div>
+  	
+</div>	
+			
+ 
+  	
+  	
+
+
+<div id="SMFOOTER">Copy right © 2018 S.A.O Universe. All rights reserved.</div>  
+
+  </div>
+
+<script>
+	$(document).ready(function() {
+	
+		$(window).bind("load resize",function() {
+				
+			RESETHOVER();
+			RESETLTHUMB();
+			CHANGEAREA();
+			$("#LARGETHUMB").css({backgroundImage:'url(images/LOCATIONS/rescue.png)'});
+			$("#LARGETHUMB").css({backgroundPosition:"-650px",filter:"saturate(100%)"})
+			$("#LARGEB").text("The Rescue").css({height:0});
+			$("#SMALLTHUMB1").css({backgroundImage:'url(images/LOCATIONS/rescue2.jpg)'});
+			$("#SMALLTHUMB1").css({backgroundPosition:"-1050px"});
+			$("#SMALLTHUMB2").css({backgroundImage:'url(images/LOCATIONS/rescue3.jpg)'});
+			
+			$("#SMALL1B").text("The Rescue");
+			$("#SMALL2B").text("The Rescue");
+			RESCUE();
+			
+			RESETAREA();
+			RESETHOVERAREA();
+			$("#TESTT").css({color:"rgba(78,173,201,1.00)",textshadow: "0 0 5px rgba(0,255,255,0.3)",fontSize:"25px"});
+			$("#TESTT").hover(function() {
+			$(this).css({color:"rgba(78,173,201,1.00)",textshadow: "0 0 5px rgba(0,255,255,0.3)",fontSize:"25px"});
+			}, function() {
+			$(this).css({color:"rgba(78,173,201,1.00)",textshadow: "0 0 5px rgba(0,255,255,0.3)",fontSize:"25px"});
+			})
+			
+			$("#LARGETHUMB").click(function() {
+				$(".EVENTTIT,.PLACE,.TIME,.EVENTBODY,.PANEL hr").stop(true);
+			RESETLTHUMB();
+			$(this).css({filter:"saturate(100%)"});
+			$("#LARGEB").css({height:0});
+			RESETHOVER();
+			$(this).hover(function() {
+			$(this).css({filter:"saturate(100%)"});	
+			$("#LARGEB").css({height:0});	
+			}, function() {
+			$(this).css({filter:"saturate(100%)"});	
+			$("#LARGEB").css({height:0});		
+			})
+			animateCONTENT();
+
+			RESCUE();
+
+			animateCONTENT2();
+			})
+			$("#SMALLTHUMB1").click(function() {
+				$(".EVENTTIT,.PLACE,.TIME,.EVENTBODY,.PANEL hr").stop(true);
+			RESETLTHUMB();
+			$(this).css({filter:"saturate(100%)"});
+			$("#SMALL1B").css({height:0});
+			RESETHOVER();
+			$(this).hover(function() {
+			$(this).css({filter:"saturate(100%)"});	
+			$("#SMALL1B").css({height:0});	
+			}, function() {
+			$(this).css({filter:"saturate(100%)"});	
+			$("#SMALL1B").css({height:0});		
+			})
+			animateCONTENT();
+
+			RESCUE();
+
+			animateCONTENT2();
+			})
+			$("#SMALLTHUMB2").click(function() {
+				$(".EVENTTIT,.PLACE,.TIME,.EVENTBODY,.PANEL hr").stop(true);
+			RESETLTHUMB();
+			$(this).css({filter:"saturate(100%)"});
+			$("#SMALL2B").css({height:0});
+			RESETHOVER();
+			$(this).hover(function() {
+			$(this).css({filter:"saturate(100%)"});	
+			$("#SMALL2B").css({height:0});	
+			}, function() {
+			$(this).css({filter:"saturate(100%)"});	
+			$("#SMALL2B").css({height:0});		
+			})
+			animateCONTENT();
+
+			RESCUE();
+
+			animateCONTENT2();
+			})
+			
+		function RESETHOVERAREA() {
+			$(".liz").hover(function() {
+				$(this).css({color: "rgba(235,166,1,0.90)",textshadow: "0 0 5px rgba(0,255,255,0.3)",fontSize:"25px"});
+			}, function() {
+				$(this).css({color:"rgba(255,255,255,0.7)",fontSize:"20px",textshadow: "0 0 5px rgba(255,255,255,0.3)"})
+			})
+			
+		}	
+		function RESETHOVER() {	
+			
+		$("#LARGETHUMB").hover(function() {
+			$(this).css({filter:"saturate(100%)"});
+			$("#LARGEB").css({height:0});
+		},function() {
+			$(this).css({filter:"saturate(70%)"});
+			$("#LARGEB").css({height:50});
+		})
+		
+		$("#SMALLTHUMB1").hover(function() {
+			$(this).css({filter:"saturate(100%)"});
+			$("#SMALL1B").css({height:0});
+		},function() {
+			$(this).css({filter:"saturate(70%)"});
+			$("#SMALL1B").css({height:50});
+		})	
+		
+		$("#SMALLTHUMB2").hover(function() {
+			$(this).css({filter:"saturate(100%)"});
+			$("#SMALL2B").css({height:0});
+		},function() {
+			$(this).css({filter:"saturate(70%)"});
+			$("#SMALL2B").css({height:50});
+		})
+		
+		}
+			
+		RESETHOVERAREA();
+			$("#TESTT").hover(function() {
+			$(this).css({color:"rgba(78,173,201,1.00)",textshadow: "0 0 5px rgba(0,255,255,0.3)",fontSize:"25px"});
+			}, function() {
+			$(this).css({color:"rgba(78,173,201,1.00)",textshadow: "0 0 5px rgba(0,255,255,0.3)",fontSize:"25px"});
+			})
+		
+		function RESETAREA() {
+			$(".liz").css({color:"rgba(255,255,255,0.7)",fontSize:"20px",textshadow: "0 0 5px rgba(255,255,255,0.3)"})
+		}
+			
+		function RESETLTHUMB() {
+			$(".GTHUMB").css({filter:"saturate(70%)"});
+			$(".BLACK").css({height:50});
+		}
+		function animateCONTENT() {
+			$(".EVENTTIT,.PLACE,.TIME,.EVENTBODY,.PANEL hr").animate({marginRight:"-=500"},400);
+		}
+		function animateCONTENT2() {
+			$(".EVENTTIT,.PLACE,.TIME,.EVENTBODY,.PANEL hr").animate({marginRight:"+=500"},300);
+		}	
+		function RESCUE() {
+			$(".EVENTTIT").text("The Rescue");
+			$(".PLACE").text("Alfheim");
+			$(".TIME").text("January 20, 2025");
+			$(".EVENTBODY").text("Leafa and Recon were attacked while traveling through the Ancient Forest by eight Salamanders. After some time, Kirito appeared and he easily dispatched two of the Salamanders, allowing the remaining Salamander, Kagemune, to escape.");
+		}
+
+		function JOURNEY() {
+			$(".EVENTTIT").text("The Journey Begins");
+			$(".PLACE").text("Alfheim");
+			$(".TIME").text("January 20, 2025");
+			$(".EVENTBODY").text("Kirito and Leafa introduced themselves to each other. After the conversation, they both agreed to travel to Swilvane for Leafa to treat Kirito to a drink for saving her.");
+		}
+		function BATTLE() {
+			$(".EVENTTIT").text("Epic Flying Battle");
+			$(".PLACE").text("Alfheim");
+			$(".TIME").text("January 24, 2025");
+			$(".EVENTBODY").text("The Sylph-Cait Sith alliance conference was interrupted by a Salamander army. However, the attack was stopped by Kirito, who won the duel and helped persuade Eugene and the Salamander army retreated.");
+		}
+
+		function QUEST() {
+			$(".EVENTTIT").text("The Grand Quest");
+			$(".PLACE").text("Alfheim");
+			$(".TIME").text("February 2, 2025");
+			$(".EVENTBODY").text("Kirito attempted to climb the World Tree twice to rescue the captive Asuna from Fairy King Oberon. With the help of Sylph and Cait Sith raid squadrons, Kirito managed to break through the wall of Guardian Knights and reach the top gate.");
+		}
+		function CALIBUR() {
+			$(".EVENTTIT").text("The Excalibur");
+			$(".PLACE").text("Alfheim");
+			$(".TIME").text("December 28, 2025");
+			$(".EVENTBODY").text("After discovering that other players had found the location of the Holy Sword Excalibur. Kirito called Asuna, Lisbeth, Silica, Klein and Sinon to form a full party and attempt to raid the Inverted Pyramid Dungeon again.");
+		}
+			
+		$(".AREAbody li").click(function() {
+			RESETAREA();
+			RESETHOVERAREA();
+			$(this).css({color:"rgba(78,173,201,1.00)",textshadow: "0 0 5px rgba(0,255,255,0.3)",fontSize:"25px"});
+			$(this).hover(function() {
+			$(this).css({color:"rgba(78,173,201,1.00)",textshadow: "0 0 5px rgba(0,255,255,0.3)",fontSize:"25px"});
+			}, function() {
+			$(this).css({color:"rgba(78,173,201,1.00)",textshadow: "0 0 5px rgba(0,255,255,0.3)",fontSize:"25px"});
+			})
+		})	
+		
+		function CHANGEAREA() {
+			$("#LARGETHUMB").hover(function() {
+			$(this).css({filter:"saturate(100%)"});	
+			$("#LARGEB").css({height:0});	
+			}, function() {
+			$(this).css({filter:"saturate(100%)"});	
+			$("#LARGEB").css({height:0});		
+			})
+		}
+			
+	
+			
+		$("#TESTT").click(function() {
+			$(".EVENTTIT,.PLACE,.TIME,.EVENTBODY,.PANEL hr").stop(true);
+			RESETHOVER();
+			RESETLTHUMB();
+			CHANGEAREA();
+			
+			$("#LARGETHUMB").css({backgroundImage:'url(images/LOCATIONS/rescue.png)'});
+			$("#LARGETHUMB").css({backgroundPosition:"-650px",filter:"saturate(100%)"})
+			$("#LARGEB").text("The Rescue").css({height:0});
+			$("#SMALLTHUMB1").css({backgroundImage:'url(images/LOCATIONS/rescue2.jpg)'});
+			$("#SMALLTHUMB1").css({backgroundPosition:"-1050px"});
+			$("#SMALLTHUMB2").css({backgroundImage:'url(images/LOCATIONS/rescue3.jpg)'});		
+			$("#SMALL1B").text("The Rescue");
+			$("#SMALL2B").text("The Rescue");
+			animateCONTENT();
+
+			RESCUE();
+		
+			animateCONTENT2();
+			$("#LARGETHUMB").click(function() {
+				$(".EVENTTIT,.PLACE,.TIME,.EVENTBODY,.PANEL hr").stop(true);
+			RESETLTHUMB();
+			$(this).css({filter:"saturate(100%)"});
+			$("#LARGEB").css({height:0});
+			RESETHOVER();
+			$(this).hover(function() {
+			$(this).css({filter:"saturate(100%)"});	
+			$("#LARGEB").css({height:0});	
+			}, function() {
+			$(this).css({filter:"saturate(100%)"});	
+			$("#LARGEB").css({height:0});		
+			})
+			animateCONTENT();
+
+			RESCUE();
+
+			animateCONTENT2();
+			})
+			$("#SMALLTHUMB1").click(function() {
+				$(".EVENTTIT,.PLACE,.TIME,.EVENTBODY,.PANEL hr").stop(true);
+			RESETLTHUMB();
+			$(this).css({filter:"saturate(100%)"});
+			$("#SMALL1B").css({height:0});
+			RESETHOVER();
+			$(this).hover(function() {
+			$(this).css({filter:"saturate(100%)"});	
+			$("#SMALL1B").css({height:0});	
+			}, function() {
+			$(this).css({filter:"saturate(100%)"});	
+			$("#SMALL1B").css({height:0});		
+			})
+			animateCONTENT();
+
+			RESCUE();
+
+			animateCONTENT2();
+			})
+			$("#SMALLTHUMB2").click(function() {
+				$(".EVENTTIT,.PLACE,.TIME,.EVENTBODY,.PANEL hr").stop(true);
+			RESETLTHUMB();
+			$(this).css({filter:"saturate(100%)"});
+			$("#SMALL2B").css({height:0});
+			RESETHOVER();
+			$(this).hover(function() {
+			$(this).css({filter:"saturate(100%)"});	
+			$("#SMALL2B").css({height:0});	
+			}, function() {
+			$(this).css({filter:"saturate(100%)"});	
+			$("#SMALL2B").css({height:0});		
+			})
+			animateCONTENT();
+
+			RESCUE();
+
+			animateCONTENT2();
+			})
+		})
+		$("#li2").click(function() {
+			$(".EVENTTIT,.PLACE,.TIME,.EVENTBODY,.PANEL hr").stop(true);
+			RESETHOVER();
+			RESETLTHUMB();
+			CHANGEAREA();
+			$("#LARGETHUMB").css({backgroundImage:'url(images/LOCATIONS/journey.png)'});
+			$("#LARGETHUMB").css({backgroundPosition:"-650px",filter:"saturate(100%)"})
+			$("#LARGEB").text("The Journey Begins").css({height:0});
+			$("#SMALLTHUMB1").css({backgroundImage:'url(images/LOCATIONS/journey2.png)'});
+			$("#SMALLTHUMB1").css({backgroundPosition:"-1060px"});
+			$("#SMALLTHUMB2").css({backgroundImage:'url(images/LOCATIONS/journey3.png)'});
+			
+			$("#SMALL1B").text("The Journey Begins");
+			$("#SMALL2B").text("The Journey Begins");
+			animateCONTENT();
+
+			JOURNEY();
+
+			animateCONTENT2();
+			$("#LARGETHUMB").click(function() {
+				$(".EVENTTIT,.PLACE,.TIME,.EVENTBODY,.PANEL hr").stop(true);
+			RESETLTHUMB();
+			$(this).css({filter:"saturate(100%)"});
+			$("#LARGEB").css({height:0});
+			RESETHOVER();
+			$(this).hover(function() {
+			$(this).css({filter:"saturate(100%)"});	
+			$("#LARGEB").css({height:0});	
+			}, function() {
+			$(this).css({filter:"saturate(100%)"});	
+			$("#LARGEB").css({height:0});		
+			})
+			animateCONTENT();
+
+			JOURNEY();
+
+			animateCONTENT2();
+			})
+			$("#SMALLTHUMB1").click(function() {
+				$(".EVENTTIT,.PLACE,.TIME,.EVENTBODY,.PANEL hr").stop(true);
+			RESETLTHUMB();
+			$(this).css({filter:"saturate(100%)"});
+			$("#SMALL1B").css({height:0});
+			RESETHOVER();
+			$(this).hover(function() {
+			$(this).css({filter:"saturate(100%)"});	
+			$("#SMALL1B").css({height:0});	
+			}, function() {
+			$(this).css({filter:"saturate(100%)"});	
+			$("#SMALL1B").css({height:0});		
+			})
+			animateCONTENT();
+
+			JOURNEY();
+
+			animateCONTENT2();
+			})
+			$("#SMALLTHUMB2").click(function() {
+				$(".EVENTTIT,.PLACE,.TIME,.EVENTBODY,.PANEL hr").stop(true);
+			RESETLTHUMB();
+			$(this).css({filter:"saturate(100%)"});
+			$("#SMALL2B").css({height:0});
+			RESETHOVER();
+			$(this).hover(function() {
+			$(this).css({filter:"saturate(100%)"});	
+			$("#SMALL2B").css({height:0});	
+			}, function() {
+			$(this).css({filter:"saturate(100%)"});	
+			$("#SMALL2B").css({height:0});		
+			})
+			animateCONTENT();
+
+			JOURNEY();
+
+			animateCONTENT2();
+			})
+		})
+		$("#li3").click(function() {
+			$(".EVENTTIT,.PLACE,.TIME,.EVENTBODY,.PANEL hr").stop(true);
+			RESETHOVER();
+			RESETLTHUMB();
+			CHANGEAREA();
+			$("#LARGETHUMB").css({backgroundImage:'url(images/LOCATIONS/battle.png)'});
+			$("#LARGETHUMB").css({backgroundPosition:"-570px",filter:"saturate(100%)"})
+			$("#LARGEB").text("Epic Flying Battle").css({height:0});
+			$("#SMALLTHUMB1").css({backgroundImage:'url(images/LOCATIONS/battle2.png)'});
+			$("#SMALLTHUMB1").css({backgroundPosition:"-1150px"});
+			$("#SMALLTHUMB2").css({backgroundImage:'url(images/LOCATIONS/battle3.png)'});
+			
+			$("#SMALL1B").text("Epic Flying Battle");
+			$("#SMALL2B").text("Epic Flying Battle");
+			animateCONTENT();
+
+			BATTLE();
+		
+			animateCONTENT2();
+			$("#LARGETHUMB").click(function() {	
+				$(".EVENTTIT,.PLACE,.TIME,.EVENTBODY,.PANEL hr").stop(true);
+			RESETLTHUMB();
+			$(this).css({filter:"saturate(100%)"});
+			$("#LARGEB").css({height:0});
+			RESETHOVER();
+			$(this).hover(function() {
+			$(this).css({filter:"saturate(100%)"});	
+			$("#LARGEB").css({height:0});	
+			}, function() {
+			$(this).css({filter:"saturate(100%)"});	
+			$("#LARGEB").css({height:0});		
+			})
+			animateCONTENT();
+
+			BATTLE();
+		
+			animateCONTENT2();
+			})
+			$("#SMALLTHUMB1").click(function() {
+				$(".EVENTTIT,.PLACE,.TIME,.EVENTBODY,.PANEL hr").stop(true);
+			RESETLTHUMB();
+			$(this).css({filter:"saturate(100%)"});
+			$("#SMALL1B").css({height:0});
+			RESETHOVER();
+			$(this).hover(function() {
+			$(this).css({filter:"saturate(100%)"});	
+			$("#SMALL1B").css({height:0});	
+			}, function() {
+			$(this).css({filter:"saturate(100%)"});	
+			$("#SMALL1B").css({height:0});		
+			})
+			animateCONTENT();
+		
+			BATTLE();
+	
+			animateCONTENT2();
+			})
+			$("#SMALLTHUMB2").click(function() {
+				$(".EVENTTIT,.PLACE,.TIME,.EVENTBODY,.PANEL hr").stop(true);
+			RESETLTHUMB();
+			$(this).css({filter:"saturate(100%)"});
+			$("#SMALL2B").css({height:0});
+			RESETHOVER();
+			$(this).hover(function() {
+			$(this).css({filter:"saturate(100%)"});	
+			$("#SMALL2B").css({height:0});	
+			}, function() {
+			$(this).css({filter:"saturate(100%)"});	
+			$("#SMALL2B").css({height:0});		
+			})
+			animateCONTENT();
+
+			BATTLE();
+		
+			animateCONTENT2();
+			})
+		})
+		$("#li4").click(function() {
+			$(".EVENTTIT,.PLACE,.TIME,.EVENTBODY,.PANEL hr").stop(true);
+			RESETHOVER();
+			RESETLTHUMB();
+			CHANGEAREA();
+			$("#LARGETHUMB").css({backgroundImage:'url(images/LOCATIONS/calibur2.jpg)'});
+			$("#LARGETHUMB").css({backgroundPosition:"-665px",filter:"saturate(100%)"})
+			$("#LARGEB").text("The Excalibur").css({height:0});
+			$("#SMALLTHUMB1").css({backgroundImage:'url(images/LOCATIONS/quest2.png)'});
+			$("#SMALLTHUMB1").css({backgroundPosition:"640px"});
+			$("#SMALLTHUMB2").css({backgroundImage:'url(images/LOCATIONS/quest3.png)'});
+			
+			$("#SMALL1B").text("The Grand Quest");
+			$("#SMALL2B").text("The Grand Quest");
+			animateCONTENT();
+
+			CALIBUR();
+
+			animateCONTENT2();
+			$("#LARGETHUMB").click(function() {	
+				$(".EVENTTIT,.PLACE,.TIME,.EVENTBODY,.PANEL hr").stop(true);
+			RESETLTHUMB();
+			$(this).css({filter:"saturate(100%)"});
+			$("#LARGEB").css({height:0});
+			RESETHOVER();
+			$(this).hover(function() {
+			$(this).css({filter:"saturate(100%)"});	
+			$("#LARGEB").css({height:0});	
+			}, function() {
+			$(this).css({filter:"saturate(100%)"});	
+			$("#LARGEB").css({height:0});		
+			})
+			animateCONTENT();
+
+			CALIBUR();
+	
+			animateCONTENT2();
+			})
+			$("#SMALLTHUMB1").click(function() {
+				$(".EVENTTIT,.PLACE,.TIME,.EVENTBODY,.PANEL hr").stop(true);
+			RESETLTHUMB();
+			$(this).css({filter:"saturate(100%)"});
+			$("#SMALL1B").css({height:0});
+			RESETHOVER();
+			$(this).hover(function() {
+			$(this).css({filter:"saturate(100%)"});	
+			$("#SMALL1B").css({height:0});	
+			}, function() {
+			$(this).css({filter:"saturate(100%)"});	
+			$("#SMALL1B").css({height:0});		
+			})
+			animateCONTENT();
+		
+			QUEST();
+
+			animateCONTENT2();
+			})
+			$("#SMALLTHUMB2").click(function() {
+				$(".EVENTTIT,.PLACE,.TIME,.EVENTBODY,.PANEL hr").stop(true);
+			RESETLTHUMB();
+			$(this).css({filter:"saturate(100%)"});
+			$("#SMALL2B").css({height:0});
+			RESETHOVER();
+			$(this).hover(function() {
+			$(this).css({filter:"saturate(100%)"});	
+			$("#SMALL2B").css({height:0});	
+			}, function() {
+			$(this).css({filter:"saturate(100%)"});	
+			$("#SMALL2B").css({height:0});		
+			})
+			animateCONTENT();
+	
+			QUEST();
+	
+			animateCONTENT2();
+			})
+		})
+		
+		$("#LPAGE2").hover(function() {
+		$(this).css({color:"rgba(235,166,1,1)"});
+		}, function() {
+		$(this).css({color:"rgba(255,255,255,0.7)"});	
+		})	
+		$(this).css({color:"rgba(78,173,201,1)"});
+		$(this).off("mouseenter mouseleave");
+		$("#LPAGE2").css({color:"rgba(255,255,255,0.7)"});	
+		
+		$("#LPAGE2").click(function() {
+		$("#LPAGE1").hover(function() {
+		$(this).css({color:"rgba(235,166,1,1)"});
+		}, function() {
+		$(this).css({color:"rgba(255,255,255,0.7)"});	
+		})
+		$(this).css({color:"rgba(78,173,201,1)"});
+		$(this).off("mouseenter mouseleave");
+		$("#LPAGE1").css({color:"rgba(255,255,255,0.7)"});
+		$("#SMALLTHUMB1").css({opacity:1,pointerEvents:"auto"});
+		$("#LARGETHUMB, #SMALLTHUMB2").css({opacity:0,pointerEvents:"none"});	
+		});
+			
+		$("#LPAGE1").click(function() {
+		$("#LPAGE2").hover(function() {
+		$(this).css({color:"rgba(235,166,1,1)"});
+		}, function() {
+		$(this).css({color:"rgba(255,255,255,0.7)"});	
+		})
+		$(this).css({color:"rgba(78,173,201,1)"});
+		$(this).off("mouseenter mouseleave");
+		$("#LPAGE2").css({color:"rgba(255,255,255,0.7)"});
+		$("#LARGETHUMB, #SMALLTHUMB2").css({opacity:1,pointerEvents:"auto"});
+		$("#SMALLTHUMB1").css({opacity:0,pointerEvents:"none"});		
+		});	
+
+	if($(window).width() > 1100) {
+		$(".EVENTTIT,.PLACE,.TIME,.EVENTBODY,.PANEL hr").stop(true);
+		$("#SMALLTHUMB1,#SMALLTHUMB2,#LARGETHUMB").css({opacity:1,pointerEvents:"auto"});
+		$(".AREAbody li").click(function() {
+		$("#SMALLTHUMB1,#SMALLTHUMB2,#LARGETHUMB").css({opacity:1,pointerEvents:"auto"});
+		})	
+	}
+	else {
+		$(".EVENTTIT,.PLACE,.TIME,.EVENTBODY,.PANEL hr").stop(true);
+		$("#SMALLTHUMB1").css({opacity:0,pointerEvents:"none"});
+		$("#LARGETHUMB, #SMALLTHUMB2").css({opacity:1,pointerEvents:"auto"});
+		$("#LPAGE2").hover(function() {
+		$(this).css({color:"rgba(235,166,1,1)"});
+		}, function() {
+		$(this).css({color:"rgba(255,255,255,0.7)"});	
+		})
+		$("#LPAGE1").css({color:"rgba(78,173,201,1)"});
+		$("#LPAGE1").off("mouseenter mouseleave");
+		$("#LPAGE2").css({color:"rgba(255,255,255,0.7)"});
+		
+		$(".AREAbody li").click(function() {
+			$(".EVENTTIT,.PLACE,.TIME,.EVENTBODY,.PANEL hr").stop(true);
+		$("#SMALLTHUMB1").css({opacity:0,pointerEvents:"none"});
+		$("#LARGETHUMB, #SMALLTHUMB2").css({opacity:1,pointerEvents:"auto"});
+		$("#LPAGE2").hover(function() {
+		$(this).css({color:"rgba(235,166,1,1)"});
+		}, function() {
+		$(this).css({color:"rgba(255,255,255,0.7)"});	
+		})
+		$("#LPAGE1").css({color:"rgba(78,173,201,1)"});
+		$("#LPAGE1").off("mouseenter mouseleave");
+		$("#LPAGE2").css({color:"rgba(255,255,255,0.7)"});
+		})	
+	
+	}		
+		})
+	})
+	</script>
+
+</body>
+</html>

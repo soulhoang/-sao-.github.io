@@ -1,0 +1,39 @@
+/* CSS Document */
+
+#THUMBG {
+	margin:150px 50px 0px 50px;
+	transition: all 0.2s;
+}
+#COL1 {
+	padding:10px;
+}
+#COL2 {
+	padding:10px;
+}
+#IMG2 {
+	width:100%;
+	top:4.5vw;
+}
+#IMG3 {
+	top:5.5vw;
+	width:100%;
+}
+#IMG4 {
+	top:7.8vw;;
+}
+#IMG1 {
+	width:100%;
+}
+#NAVILINE {
+	margin-top:10vw;
+}
+#SITEMAPICON {
+	margin-top:9vw;
+}
+#TIME {
+
+	top:9vw;
+
+}
+
+

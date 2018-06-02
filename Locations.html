@@ -1,0 +1,475 @@
+<!doctype html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Locations | S.A.O Universe</title>
+<link rel="stylesheet" href="CSS/main.css" />
+<link rel="stylesheet" media="(min-width: 0px) and (max-width: 480px)" href="CSS/small.css" />
+<link rel="stylesheet" media="(min-width: 1001px) and (max-width: 3000px)" href="CSS/large.css" />
+<link rel="stylesheet" media="(min-width: 1101px) and (max-width: 3000px)" href="CSS/fixlocalarge.css" />
+<link rel="stylesheet" media="(min-width: 901px) and (max-width: 1100px)" href="CSS/text.css" />
+<link rel="stylesheet" media="(min-width: 992px) and (max-width: 3000px)" href="CSS/fixloca2.css" />
+<link rel="stylesheet" media="(min-width: 0px) and (max-width: 991px)" href="CSS/fixloca.css" />
+<link rel="stylesheet" media="(min-width: 800px) and (max-width: 900px)" href="CSS/text2.css" />
+<link rel="stylesheet" media="(min-width: 0px) and (max-width: 799px)" href="CSS/text3.css" />
+<link rel="stylesheet" media="(min-width: 0px) and (max-width: 500px)" href="CSS/sinon.css" />
+<link rel="stylesheet" media="(min-width: 769px) and (max-width: 1000px)" href="CSS/medium2.css" />
+<link rel="stylesheet" media="(min-width: 515px) and (max-width: 768px)" href="CSS/medium.css" />
+<link rel="stylesheet" media="(min-width: 0px) and (max-width: 767px)" href="CSS/fixmedium.css" />
+<link rel="stylesheet" media="(min-width: 601px) and (max-width: 616px)" href="CSS/charfix.css"/>
+<link rel="stylesheet" media="(min-width: 0px) and (max-width: 600px)" href="CSS/medium222.css"/>
+<link rel="stylesheet" media="(min-width: 0px) and (max-width: 514px)" href="CSS/medium22.css"/>
+
+<!-- <link href="CSS/bootstrap.css" rel="stylesheet"> -->
+<link href="css/bootstrap-3.3.7.css" rel="stylesheet" type="text/css">
+<style>
+	h3 {
+	font-family: SAO;
+	color:white;
+	font-size:50px;
+	letter-spacing: 0.1em;
+	}
+	</style>
+<script src="JS/jquery-1.11.1.min.js"></script>
+<script src="JS/jquery.easing.min.js"></script>
+<script src="js/bootstrap-3.3.7.js"></script>
+<script>
+	  $(document).ready(function() {
+		
+		  
+		  $("#MALEGENDER").hover(function(){
+    $(this).css({backgroundImage:'url(images/CHARACTERs/images/MALEGENDER_iconhover_05.png)'});
+},function(){
+     $(this).css({backgroundImage:'url(images/CHARACTERs/images/MALEGENDER_icon_05.png)'});
+});
+		  $("#FEMALEGENDER").hover(function(){
+    $(this).css({backgroundImage:'url(images/CHARACTERs/images/FEMALEGENDER_iconhover_07.png)'});
+},function(){
+     $(this).css({backgroundImage:'url(images/CHARACTERs/images/FEMALEGENDER_icon_07.png)'});
+});
+		  $("#ALLGENDER").hover(function(){
+    $(this).css({backgroundImage:'url(images/CHARACTERs/images/ALLGENDER_iconhover_11.png)'});
+},function(){
+     $(this).css({backgroundImage:'url(images/CHARACTERs/images/ALLGENDER_icon_05.png)'});
+});
+		  
+		  		  function updateClock() { document.getElementById("CHARTIME").innerHTML = new Date().toLocaleTimeString('en-US', { hour12: false, 
+                                             hour: "numeric", 
+                                             minute: "numeric"}) }
+		  updateClock();
+		  setInterval(updateClock, 1000);
+/*		  			  $("#LOGIN").hover(function(){
+					$(this).css({backgroundImage:'url(images/LOG-IN-ACTIVE_25.png)'});
+				},function(){
+					 $(this).css({backgroundImage:'url(images/LOG-IN_05.png)'});
+				});*/
+		   $("#X2").hide();
+		  var ABC = 1;
+		  /*$("#LOGIN").hover(function() {
+			  $( this ).css({backgroundImage:'url(images/LOG-IN-ACTIVE_25.png)'});
+			  
+		  }, function() {
+			  $( this ).css({backgroundImage:'url(images/LOG-IN_05.png)'});
+		  }
+		)*/
+		  
+		  $("#LOGIN").click(function() {
+			  $( this ).css({backgroundImage:'url(images/LOGIN_active.png)'});
+			  
+			/*  $("#LOGIN").hover(function() {
+			  $( this ).css({backgroundImage:'url(images/LOGIN_active.png)'});
+			  
+		  }, function() {
+			  $( this ).css({backgroundImage:'url(images/LOGIN_active.png)'});
+		  }
+		)*/
+			  
+			  
+			  $(".form").css({transform:"scaleY(1)"});
+			  $("#X2").delay(200).show(0);
+			  $("#X").delay(200).hide(0);
+/*			    $("#LOGIN").hover(function(){
+					$(this).css({backgroundImage:'url(images/LOGIN_active.png)'});
+				},function(){
+					 $(this).css({backgroundImage:'url(images/LOGIN_active.png)'});
+				});*/
+		  })		 
+			  $(".input" ).focus(); 
+
+		  $("#X2").click(function() {
+			  $("#X").show(0);
+			  $("#LOGIN").css({backgroundImage:'url(images/LOG-IN_05.png)'});
+			  $(".form").css({transform:"scaleY(0)"});
+			  $(this).hide();
+			  $("form").find("input[type=text], textarea").val("");
+			  $("form").find("input[type=password], textarea").val("");
+/*			  $("#LOGIN").hover(function(){
+					$(this).css({backgroundImage:'url(images/LOG-IN-ACTIVE_25.png)'});
+				},function(){
+					 $(this).css({backgroundImage:'url(images/LOG-IN_05.png)'});
+				});*/
+			  
+			  
+		  })
+
+		  $("#SUBCHARM").hide();
+		  $("#SUBLOCAM").hide();
+		   var PRO = 1;
+		   var VIP = 1;
+		  $("#CHARV").click(function() {
+		 
+			  if (PRO == 1) {
+				  $("#DECORMID").animate({height: '+=51'}, 500);
+				  $("#SUBCHARM").slideDown(500);
+				  $("#CHARM").css({backgroundColor:'rgba(235,166,1,0.8)',color: 'rgba(255,255,255,0.8)'});
+			  	  $("#CHARV").css({transform:"rotate(180deg)"});
+
+			  PRO = 0;
+		  }
+			  else {
+				  $("#DECORMID").animate({height: '-=51'}, 500);
+				  $("#SUBCHARM").slideUp(500);
+				  $("#CHARM").css({backgroundColor:'rgba(255,255,255,0.7)',color: 'rgba(0,0,0,0.5)'});
+			  	  $("#CHARV").css({transform:"rotate(-360deg)"});
+				  
+			  PRO = 1;
+		  }
+			  
+		  })
+		  
+		  $("#LOCAV").click(function() {
+		 
+			  if (VIP == 1) {
+				  $("#DECORMID").stop(true);
+				  $("#SUBLOCAM").stop(true);
+				  $("#DECORMID").animate({height: '+=51'}, 500);
+				  $("#SUBLOCAM").slideDown(500);
+				  $("#LOCAM").css({backgroundColor:'rgba(235,166,1,0.8)',color: 'rgba(255,255,255,0.8)'});
+			  	  $("#LOCAV").css({transform:"rotate(180deg)"});
+
+			  VIP = 0;
+		  }
+			  else {
+				  $("#DECORMID").stop(true);
+				  $("#SUBLOCAM").stop(true);
+				  $("#DECORMID").animate({height: '-=51'}, 500);
+				  $("#SUBLOCAM").slideUp(500);
+				  $("#LOCAM").css({backgroundColor:'rgba(255,255,255,0.7)',color: 'rgba(0,0,0,0.5)'});
+			  	  $("#LOCAV").css({transform:"rotate(-360deg)"});
+				  
+			  VIP = 1;
+		  }
+			  
+		  })
+				  
+		  var FLAG = 1;
+		  $("#MENUNAV").css({backgroundImage:'url(images/MENU_icon_24.png)'});
+//		  $("#MENUNAV").focus(
+//				  function() {
+//					$( this ).css({backgroundImage:'url(images/MENUICON_active.png)'});
+//				  }
+//				);
+		  $("#MENUNAV").click(function() {
+			  if (FLAG == 1) {
+				  $("#MENUMID").stop(true);
+				  $("#MENUMID").animate({marginRight:0});
+				  $("#MENUNAV").css({backgroundImage:'url(images/CLOSEMENU_icon_24.png)'});
+				  FLAG = 0;
+			  }
+			  else {
+//		  $("#MENUNAV").focus(
+//				  function() {
+//					$( this ).css({backgroundImage:'url(images/CLOSEICON_active.png)'});
+//				  }
+//				);
+				  
+				  $("#DECORMID").css({height: '281'});
+				  $("#SUBCHARM").hide();
+				  $("#SUBLOCAM").hide();
+				  $("#CHARM").css({backgroundColor:'rgba(255,255,255,0.7)',color: 'rgba(0,0,0,0.5)'});
+				  $("#LOCAM").css({backgroundColor:'rgba(255,255,255,0.7)',color: 'rgba(0,0,0,0.5)'});
+				  $("#LOCAV").css({transform:"none"});
+				  $("#CHARV").css({transform:"none"});
+				  $("#MENUMID").stop(true);
+				  $("#MENUMID").animate({marginRight:-352});
+				  $("#MENUNAV").css({backgroundImage:'url(images/MENU_icon_24.png)'});
+//				  $("#MENUNAV").focus(
+//				  function() {
+//					$( this ).css({backgroundImage:'url(images/MENUICON_active.png)'});
+//				  }
+//				);
+				  FLAG = 1;
+				  VIP = 1;
+				  PRO = 1;
+			  }
+			  
+			  
+		  })
+		  
+	 
+	function CLEARLOCA() {
+	$("#SMAINICON").css({backgroundImage:'url(images/aincradSM.png)'});
+	$("#SMALFICON").css({backgroundImage:'url(images/alfheimSM.png)'});
+	$("#SMGGOICON").css({backgroundImage:'url(images/ggoSM.png)'});
+	}
+	
+	function CLEARCHAR() {
+	$("#SMMALEICON").css({backgroundImage:'url(images/maleSM.png)'});
+	$("#SMFEMALEICON").css({backgroundImage:'url(images/femaleSM.png)'});
+	}
+	
+	function CLEARMENUMID() {
+	$("#DECORMID").css({height: '281'});
+	$("#SUBCHARM").hide();
+	$("#SUBLOCAM").hide();
+	$("#CHARM").css({backgroundColor:'rgba(255,255,255,0.7)',color: 'rgba(0,0,0,0.5)'});
+	$("#LOCAM").css({backgroundColor:'rgba(255,255,255,0.7)',color: 'rgba(0,0,0,0.5)'});
+	$("#LOCAV").css({transform:"none"});
+	$("#CHARV").css({transform:"none"});		  
+	$("#MENUMID").animate({marginRight:-352});
+	$("#MENUNAV").css({backgroundImage:'url(images/MENU_icon_24.png)'});
+	FLAG = 1;
+	VIP = 1;
+	PRO = 1;
+	}
+		  
+	function CLEARLOGIN() {
+	$("#X").show(0);
+	$("#LOGIN").css({backgroundImage:'url(images/LOG-IN_05.png)'});
+	$(".form").css({transform:"scaleY(0)"});
+	$("#X2").hide();
+	$("form").find("input[type=text], textarea").val("");
+	$("form").find("input[type=password], textarea").val("");
+	}
+
+	
+$(window).bind("load resize",function() {
+	
+	
+//	$("#PAGE1").trigger("click");
+//	$("#thumb1c").trigger("click");
+	
+	CLEARMENUMID();
+	CLEARLOGIN();
+		$("#CHARSITEMAPICON").hover(function() {
+		$("#CHARSITEMAPNAME").css({opacity:0.7,top:"50px"});
+	}, function(){
+		$("#CHARSITEMAPNAME").css({opacity:0,top:"20px"});
+	})
+		$("#CHARSITEMAPICON").hover(function(){
+    $(this).css("background-image", "url('images/sitemapicon_hover.png')");
+},function(){
+     $(this).css("background-image", "url('images/sitemapicon_46.png')"); 
+});
+
+
+	
+
+	
+	
+})
+
+
+	
+})
+
+	</script>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<div id="LOCAFRAME1">
+  <div id="LOCASPLASH">
+  <div id="MENUNAV" tabindex="0"></div>
+  <div id="MENUMID">
+  <div id="DECORMID"></div>
+  <a id="HOMELINK" href="Home.html"><div id="HOMEM" class="MSTYLE">Home</div></a>
+  <div id="CHARG">
+  <div id="CHARV" class="VSTYLE"></div>
+	  <a id="CHARLINK" href="Characters.html"><div id="CHARM" class="MSTYLE">Characters</div></a>
+  </div>
+  <div id="SUBCHARM">
+	  <a id="MMALELINK" href="Male.html"><div id="MALEM" class="MS2STYLE">Male</div></a>
+	  <a id="MFEMALELINK" href="Female.html"><div id="FEMALEM" class="MS2STYLE">Female</div></a>
+  </div>
+  <div id="LOCAG">
+  <div id="LOCAV" class="VSTYLE"></div>
+  <a id="LOCATIONLINK" href="Locations.html"><div id="LOCAM" class="MSTYLE">Locations</div></a>
+  </div>
+  <div id="SUBLOCAM">
+  <a id="MAINLINK" href="Aincrad.html"><div id="AINM" class="MSSTYLE">Aincrad</div></a>
+  <a id="MALFLINK" href="Alfheim.html"><div id="ALFM" class="MSSTYLE">Alfheim</div></a>
+  <a id="MGGOLINK" href="Gun Gale.html"><div id="GGOM" class="MSSTYLE">Gun Gale</div></a>
+  </div>
+	  <a id="TERMLINK" href="Terminology.html"><div id="TERMM" class="MSTYLE">Terminology</div></a>
+  </div>
+  <div id="HEAD">
+  <div id="LOGO"></div>
+  <div id="MENULINE"></div>
+  <div id="CHARTIT">LOCATIONS</div>
+  <div id="X2"></div>
+  <div id="LOGIN">
+  <div class="form">
+  <div id="graybg"></div>
+  <form>
+  <div id="title">Welcome</div>
+  <div id="label">Username:</div>
+  <div id="label2">Password:</div>
+  <input autofocus type="text" class="input">
+  <input type="password" class="input2">
+  <div id="O">
+  <input type="submit" id="O1">
+  </div>
+  <div id="X"></div>
+  </form>
+  </div>
+  </div>
+  <div id="MENU">
+  
+  <div id="HOME">
+  <a id="HHOMELINK" href="Home.html"></a>
+<!--  	<div id="HEFFEX"></div>-->
+  </div>
+  <div id="CHARACTERS">
+  <a href="Characters.html" id="LINKGIACHAR"></a>
+<!--<div id="CEFFEX"></div>-->
+  <div id="CSUB">
+  <div id="DECOR"></div>
+  <div id="MALE">Male
+    <a id="MALELINK" href="Male.html"></a>
+  <div id="MALEICON"></div>
+  </div>
+  <div id="FEMALE">Female
+    <a id="FEMALELINK" href="Female.html"></a>
+  <div id="FEMALEICON"></div>
+  </div>
+  </div>
+  </div>
+  <div id="LOCATIONS">
+   <a href="Locations.html" id="LINKGIALOCA"></a>	
+  <div id="LSUB">
+  <div id="DECOR2"></div>
+  <div id="AINCRAD">Aincrad
+    <a href="Aincrad.html" id="AINCRADLINK"></a>
+  <div id="AINICON"></div>
+  </div>
+  <div id="ALFHEIM">Alfheim
+    <a href="Alfheim.html" id="ALFHEIMLINK"></a>
+  <div id="ALFICON"></div>
+  </div>
+  <div id="GGO">Gun Gale
+     <a href="Gun Gale.html" id="GGOLINK"></a>
+  <div id="GGOICON"></div>
+  </div>
+  </div>
+  </div>
+  
+  <div id="TERMINOLOGY"></div>
+    <a id="TERMZLINK" href="Terminology.html"></a>
+  <div id="HLINE"></div>
+  <div id="CLINE"></div>
+  <div id="LLINEACTIVE"></div>
+  <div id="TLINE"></div>
+  </div>
+
+  </div>
+  	
+</div>
+
+<div id="LOCABODY">
+	
+	
+	<div id="LOCATHUMBG1">	
+		
+	<div class="container-fluid LOCASCREEN">
+  		<div class="row" id="PERS">
+			<div class="col-md-4 col-sm-4 col-xs-12" id="LCOL1Z">
+				<div class="LPANEL" id="AINPANEL">
+				<a href="Aincrad.html"><div class="BLACKL" id="AINBLACK">
+					<div class="BLACKNAME">Aincrad</div>
+					<hr class="LHR">
+					<div class="LOCANAVIICON2" id="LAINCRAD2"></div>
+				</div>
+				</a>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-12" id="LCOL2Z">
+				<div class="LPANEL" id="ALFPANEL">
+				<a href="Alfheim.html"><div class="BLACKL" id="ALFBLACK">
+					<div class="BLACKNAME">Alfheim</div>
+					<hr class="LHR">
+					<div class="LOCANAVIICON2" id="LALFHEIM2"></div>
+					</div></a>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-12" id="LCOL3Z">
+				<div class="LPANEL" id="GGOPANEL">
+					<a href="Gun Gale.html"><div class="BLACKL" id="GGOBLACK">
+					<div class="BLACKNAME">Gun Gale</div>
+					<hr class="LHR">
+					<div class="LOCANAVIICON2" id="LGGO2"></div>
+						</div></a>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+		
+	</div>
+	
+	
+
+	<div id="LOCAZNAVILINE2"></div>	
+  		<div id="CHARCONT">
+  		<div id="CHARTIME"></div>
+  		<div id="CHARSITEMAPNAME">Sitemap</div>
+  		<a id="SMICONLINK" href="Sitemap.html"><div id="CHARSITEMAPICON"></div></a>
+  		</div>
+  		
+  	<div id="CHARNAVIZ">
+		<a id="MMALELINK2" href="Gun Gale.html"><div class="LOCANAVIICON" id="LGGO"></div></a>
+		<a id="MFEMALELINK2" href="Aincrad.html"><div class="LOCANAVIICON" id="LAINCRAD"></div></a>
+  		<a id="CHARLINK2" href="Alfheim.html"><div class="LOCANAVIICON" id="LALFHEIM"></div></a>
+  	</div>
+  	
+</div>	
+			
+ 
+  	
+  	
+
+
+<div id="SMFOOTER">Copy right © 2018 S.A.O Universe. All rights reserved.</div>  
+
+  </div>
+
+<script>
+	$(document).ready(function() {
+	
+		$(window).bind("load resize",function() {
+			
+			
+		
+	if($(window).width() >= 768) {
+		$("#LCOL1Z").attr("align","right");
+		$("#LCOL2Z").attr("align","center");
+		$("#LCOL3Z").attr("align","left");
+	}
+	else {
+		$("#LCOL1Z, #LCOL2Z, #LCOL3Z").attr("align","center");
+		
+	}		
+		})
+	})
+	</script>
+
+</body>
+</html>
